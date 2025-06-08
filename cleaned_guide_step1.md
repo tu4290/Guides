@@ -1,222 +1,196 @@
-## EOTS v2.5 "Apex Predator" - Comprehensive System Guide
+EOTS v2.5 "Apex Predator" - Comprehensive System Guide
 Table of Contents
 Foreword: The Evolution to Apex Predator - Philosophy of EOTS v2.5
-## I. Introduction to EOTS v2.5
-### 1.1. Purpose of This Guide: Mastering the Apex Predator
-### 1.2. Overview of the EOTS v2.5: Adaptive Intelligence & Universal Potency
-#### 1.2.1. Core Philosophy: From Market Understanding to Lethal Execution
-#### 1.2.2. Key Architectural Pillars of Version 2.5
-### 1.3. Summary of Major Enhancements from v2.4 to v2.5
-#### 1.3.1. New Advanced Flow & Adaptive Metrics
-#### 1.3.2. The Adaptive Trade Idea Framework (ATIF)
-#### 1.3.3. Enhanced Heatmaps & Key Level Identification
-#### 1.3.4. Specialized Ticker Context Analysis (Beyond SPY/SPX)
-#### 1.3.5. Performance-Driven Learning Capabilities
-### 1.4. How to Use This Guide Effectively
-### 1.5. Disclaimer
-## II. EOTS v2.5 System Architecture & Workflow
-### 2.1. High-Level System Blueprint (Conceptual Diagram Explained)
-### 2.2. The Core Analysis Pipeline: From Data to Actionable Insight
-#### 2.2.1. Data Ingestion & Initial Processing
-#### 2.2.2. Advanced Metric Calculation (v2.5 Engine)
-#### 2.2.3. Ticker-Specific Contextualization
-#### 2.2.4. Market Regime Classification (v2.5 Dynamics)
-#### 2.2.5. Nuanced Signal Generation (v2.5 Scoring)
-#### 2.2.6. Enhanced Key Level Identification
-#### 2.2.7. The Adaptive Trade Idea Framework (ATIF) in Action
-#### 2.2.8. Precision Parameter Optimization
-#### 2.2.9. Stateful Recommendation Management & Performance Tracking
-### 2.3. Key Python Modules and Their Roles in v2.5
-### 2.4. Understanding config_v2_5.json: The Control Center
-#### 2.4.1. Overview of the Enhanced Configuration Structure
-#### 2.4.2. The Concept of Global vs. Symbol-Specific Overrides
-## III. Core Concepts & Terminology (EOTS v2.5 Context)
-### 3.1. Foundational Options Greeks (Brief Refresher)
-### 3.2. Critical v2.4 Concepts Carried into v2.5 (GIB, NVP, HP_EOD etc.)
-### 3.3. New & Evolved Concepts for v2.5:
-#### 3.3.1. Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0) - Conceptual Overview
-#### 3.3.2. Enhanced Rolling Flow Metrics (VAPI-FA, DWFD, TW-LAF) - Conceptual Overview
-#### 3.3.3. Enhanced Heatmaps (SGDHP, IVSDH, UGCH) - Conceptual Overview
-#### 3.3.4. Adaptive Trade Idea Framework (ATIF) - The Core Intelligence
-#### 3.3.5. Performance-Based Learning & Signal Weighting
-#### 3.3.6. Ticker Context Analyzer (Formerly SPY/SPX Optimizer)
-#### 3.3.7. Conviction-Based Level Scoring
-#### 3.3.8. Continuous Signal Scoring
-#### 3.3.9. Enhanced Strategy Specificity
-## IV. Market Regime Engine v2.5: The Enhanced "Soul"
-### 4.1. The "Brain" Reimagined: Adaptive Intelligence in v2.5
-### 4.2. Key Input Metric Categories (Leveraging Full v2.5 Arsenal)
-### 4.3. Integration of Ticker-Specific Context into Regime Analysis
-### 4.4. Core Logic: How Regimes are Classified in v2.5 (Dynamic Thresholds, Advanced Rules)
-### 4.5. Example v2.5 Regime Classifications & Market Implications
-#### 4.5.1. SPY/SPX Specific Regime Examples
-#### 4.5.2. Generalizable Regime Examples for Other Tickers
-### 4.6. How v2.5 Regimes Modulate System Behavior (ATIF, Signals, Parameters)
-## V. The v2.5 Metric Arsenal: Detailed Explanations
-### 5.1. Introduction to Metric Tiers: Base, Adaptive, Advanced Flow
-### 5.2. Tier 1: Foundational v2.4 Metrics Still Critical in v2.5
-#### 5.2.1. Gamma Imbalance (GIB_OI_based)
-#### 5.2.2. Net Value/Volume Pressure (NVP, NVP_Vol)
-#### 5.2.3. Standard Rolling Net Signed Flows (Underlying Level)
-#### 5.2.4. EOD Hedging Pressure (HP_EOD)
-#### 5.2.5. Net Customer Greek Flows (Underlying Level)
-#### 5.2.6. vri_0dte, vfi_0dte, vvr_0dte, vci_0dte (0DTE Suite)
-#### 5.2.7. Traditional MSPI, SAI, SSI (Conceptual basis for Adaptive versions)
-#### 5.2.8. ARFI (Conceptual basis for Adaptive versions)
-### 5.3. Tier 2: New Adaptive Metrics v2.5 (The Chameleons)
-#### 5.3.1. Adaptive Delta Adjusted Gamma Exposure (A-DAG)
-#### 5.3.2. Enhanced Skew and Delta Adjusted GEX (E-SDAG Methodologies)
-#### 5.3.3. Dynamic Time Decay Pressure Indicator (D-TDPI) & its derivatives (Enhanced CTR/TDFI)
-#### 5.3.4. Volatility Regime Indicator v2.0 (VRI 2.0) & its derivatives (Enhanced VVR/VFI_sens)
-### 5.4. Tier 3: New Enhanced Rolling Flow Metrics v2.5 (The "Super Senses")
-#### 5.4.1. Volatility-Adjusted Premium Intensity with Flow Acceleration (VAPI-FA)
-#### 5.4.2. Delta-Weighted Flow Divergence (DWFD)
-#### 5.4.3. Time-Weighted Liquidity-Adjusted Flow (TW-LAF)
-### 5.5. Data Components for Enhanced Heatmaps v2.5
-#### 5.5.1. Super Gamma-Delta Hedging Pressure (SGDHP) Data
-#### 5.5.2. Integrated Volatility Surface Dynamics (IVSDH) Data
-#### 5.5.3. Ultimate Greek Confluence (UGCH) Data
-### 5.6. (Reference) Original v2.3/v2.4 Metrics & Their Evolution
-## VI. Ticker Context Analyzer v2.5: Specializing for the Hunt
-### 6.1. Purpose: Tailoring Analysis Beyond Generic Models
-### 6.2. SPY/SPX Specific Contexts:
-#### 6.2.1. Expiration Calendar Intelligence (0DTE, M/W/F, EOM, Quads)
-#### 6.2.2. Recognizing SPY/SPX Behavioral Patterns (FOMC, VIX Div, Gamma Flips)
-#### 6.2.3. Intraday Pattern Adjustments (Opening, Midday, EOD Auctions)
-#### 6.2.4. Index Component & Sector Rotation Influence (Conceptual / If Data Available)
-### 6.3. Generalizing Context for Other Tickers:
-#### 6.3.1. Liquidity Profiling
-#### 6.3.2. Volatility Characterization
-#### 6.3.3. Basic Earnings/Event Awareness (If Data Available)
-### 6.4. How Contextual Flags Influence MRE, Metrics, and ATIF
-## VII. Enhanced Key Level Identification v2.5: Mapping Critical Zones
-### 7.1. Framework Overview: Beyond Static Thresholds
-### 7.2. Multi-Timeframe Support & Resistance Analysis (Intraday, Daily, Weekly)
-### 7.3. Advanced Wall Detection (Leveraging GIB, SGDHP data, UGCH data)
-### 7.4. Advanced Volatility Trigger Detection (Leveraging E-SDAG-VF, IVSDH data)
-### 7.5. Conviction-Based Level Scoring (Metric Confluence & Historical Validation)
-### 7.6. Integration with ATIF and Trade Parameter Optimizer
-
-## VIII. Trading Signals v2.5: Generating Nuanced Alerts
-### 8.1. Evolution of Signal Generation: From Binary to Scored Insights
-### 8.2. Core Signal Types & Their v2.5 Enhancements:
-#### 8.2.1. Adaptive Directional Signals (from A-MSPI, A-SAI, new flow confirmations)
-#### 8.2.2. Adaptive SDAG Conviction Signals (from E-SDAG alignment)
-#### 8.2.3. Volatility Regime Signals (from VRI 2.0, IVSDH data, MRE context)
-#### 8.2.4. Enhanced Time Decay Signals (D-TDPI driven Pin Risk & Charm Cascade, vci_0dte context)
-#### 8.2.5. Predictive Complex Signals (Early Structure Change from A-SSI, Advanced Flow Divergence from DWFD/ARFI)
-### 8.3. New v2.5 Signals (Driven by new metrics & ATIF needs):
-#### 8.3.1. VAPI-FA Momentum/Reversal Signals
-#### 8.3.2. DWFD "Smart Money" Divergence Alerts
-#### 8.3.3. TW-LAF Sustained Trend Confirmation Signals
-#### 8.3.4. (Other regime-driven alerts like Vanna Cascade, EOD Hedging Flow, Skew Shifts from v2.4, now using v2.5 inputs)
-### 8.4. Continuous Signal Scoring & Confidence Levels
-### 8.5. Role of Signals as Primary Input to the ATIF
-## IX. Adaptive Trade Idea Framework (ATIF) v2.5: The Apex Predator's Brain
-### 9.1. ATIF Mission: Dynamic, Learning-Driven Decision Making
-### 9.2. Component 1: Dynamic Signal Integration & Situational Assessment
-#### 9.2.1. Consuming Scored Signals from Signal Generator v2.5
-#### 9.2.2. Performance-Based Signal Weighting (via Performance Tracker)
-#### 9.2.3. Regime & Ticker Context Modulation of Signal Impact
-#### 9.2.4. Advanced Signal Conflict Resolution
-#### 9.2.5. Deriving the Overall Situational Assessment Score
-### 9.3. Component 2: Performance-Based Conviction Mapping
-#### 9.3.1. Translating Assessment Scores to Final Trade Conviction
-#### 9.3.2. How Historical Success of Setups Influences Current Conviction
-### 9.4. Component 3: Enhanced Strategy Specificity
-#### 9.4.1. Rule-Based Selection of Optimal Option Strategies
-#### 9.4.2. Determining Target DTEs and Delta Ranges
-#### 9.4.3. Outputting Clear Directives for the Trade Parameter Optimizer
-### 9.5. Component 4: Intelligent Recommendation Management (Directives Engine)
-#### 9.5.1. Adaptive Exit Threshold Logic (Dynamic SL/TP based on VRI 2.0, Key Levels)
-#### 9.5.2. Partial Position Management Rules (Scaling In/Out based on VAPI-FA, DWFD, etc.)
-#### 9.5.3. Generating Exit and Adjustment Directives for the Orchestrator
-### 9.6. Component 5: The Learning Loop - Interfacing with Performance Tracker
-#### 9.6.1. How Trade Outcomes Refine Signal Weights and Conviction Maps
-## X. Trade Parameter Optimizer v2.5: Precision Execution Setup
-### 10.1. Role: Translating ATIF Directives into Tradable Parameters
-### 10.2. Optimal Contract Selection (Strike & Expiration)
-#### 10.2.1. Using ATIF's Delta/DTE Targets
-#### 10.2.2. Considering Liquidity and Spread
-### 10.3. Precise Entry, Target, and Stop-Loss Calculation
-#### 10.3.1. Leveraging Enhanced Key Levels (SGDHP, UGCH, NVP, Multi-Timeframe)
-#### 10.3.2. Dynamic ATR (from VRI 2.0 & Ticker Context) for Parameter Setting
-#### 10.3.3. Regime-Specific ATR Multipliers & Risk/Reward Profiling
-## XI. Orchestrating the Apex Predator: EOTS v2.5 Trade Lifecycle & Cohesive Analysis
-### 11.1. The Full v2.5 Analysis & Recommendation Lifecycle (End-to-End Flow)
-### 11.2. Example: A Day in the Life of an EOTS v2.5 Trade Idea (From Genesis to Management)
-### 11.3. Advanced Flow Mapping with v2.5 Metrics (VAPI-FA, DWFD, TW-LAF in Concert)
-### 11.4. Confluence Analysis Reimagined: How ATIF Identifies High-Probability Setups
-### 11.5. Developing Your Trading Plan with EOTS v2.5's Granular Insights
-## XII. Visual Guide to the EOTS v2.5 Dashboard: The Command Center
-### 12.1. Overview of the Evolved v2.5 Dashboard Layout & Enhanced Modes
-### 12.2. Core Main Dashboard Visuals v2.5: Key Performance & Context Indicators
-#### 12.2.1. Prominent Market Regime & ATIF Conviction Displays
-#### 12.2.2. VAPI-FA, DWFD, TW-LAF Oscillators/Charts
-#### 12.2.3. Summaries of SGDHP, IVSDH, UGCH Key Zones
-#### 12.2.4. Enhanced Strategy Insights Table (v2.5 Detail)
-### 12.3. Specialized Mode Visuals v2.5:
-#### 12.3.1. "Advanced Flow Analysis" Mode (Deep Dive into VAPI-FA, DWFD, TW-LAF)
-#### 12.3.2. "Enhanced Heatmap Structures" Mode (Full SGDHP, IVSDH, UGCH)
-#### 12.3.3. "Ticker Context & Patterns" Mode (SPY/SPX Expirations, Active Patterns)
-#### 12.3.4. (Other Evolved Modes: Volatility v2.0, Adaptive Structures, Performance Review)
-### 12.4. Interpreting Key Interactive Features of the v2.5 Dashboard
-## XIII. Advanced Configuration & Customization of EOTS v2.5
-### 13.1. Deep Dive into config_v2_5.json: New Sections & Parameters
-#### 13.1.1. Configuring Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0)
-#### 13.1.2. Configuring Enhanced Flow Metrics (VAPI-FA, DWFD, TW-LAF)
-#### 13.1.3. Configuring ATIF Parameters (Learning Rates, Strategy Rules, Exit Logic)
-#### 13.1.4. Configuring Ticker Context Analyzer & SPY/SPX Optimizations
-#### 13.1.5. Setting Up Symbol-Specific Overrides & "DEFAULT" Profiles
-### 13.2. Tuning EOTS v2.5 for Different Tickers and Market Conditions
-### 13.3. Understanding the Impact of v2.5 Configuration Changes (The Enhanced Cascade)
-## XIV. Performance Tracking & System Self-Improvement
-### 14.1. Overview of performance_tracker_v2_5.py
-### 14.2. Metrics Tracked for Signals and Recommendations
-### 14.3. How Performance Data Influences ATIF's Adaptability
-### 14.4. (Optional) Reviewing Performance via the Dashboard
-## XV. Troubleshooting, FAQ & Best Practices for EOTS v2.5
-### 15.1. Common Issues & Solutions (v2.5 Specific)
-#### 15.1.1. Interpreting New Metric Behaviors (VAPI-FA spikes, DWFD divergences)
-#### 15.1.2. Understanding ATIF Decision-Making and Strategy Choices
-#### 15.1.3. Diagnosing Issues with Symbol-Specific Configurations
-### 15.2. Optimizing Configuration for Different Trading Styles with v2.5
-### 15.3. Data Integrity and API Considerations for v2.5 Metrics
-### 15.4. Best Practices for "Training" the ATIF (If Applicable)
-## XVI. Glossary of All v2.5 Metrics, Signals, Regimes, Concepts & Components
-## XVII. Appendix for EOTS v2.5
-### 17.1. Detailed Mathematical Formulas for New & Adaptive v2.5 Metrics
-### 17.2. Advanced config_v2_5.json Structure Examples (Symbol Overrides, ATIF Rules)
-### 17.3. Data Schema for performance_tracker_v2_5.py
-### 17.4. Further Reading & Advanced Options Theory References
+## Introduction to EOTS v2.5
+### Purpose of This Guide: Mastering the Apex Predator
+### Overview of the EOTS v2.5: Adaptive Intelligence & Universal Potency
+#### Core Philosophy: From Market Understanding to Lethal Execution
+#### Key Architectural Pillars of Version 2.5
+### Summary of Major Enhancements from v2.4 to v2.5
+#### New Advanced Flow & Adaptive Metrics
+#### The Adaptive Trade Idea Framework (ATIF)
+#### Enhanced Heatmaps & Key Level Identification
+#### Specialized Ticker Context Analysis (Beyond SPY/SPX)
+#### Performance-Driven Learning Capabilities
+### How to Use This Guide Effectively
+### Disclaimer
+## EOTS v2.5 System Architecture & Workflow
+### High-Level System Blueprint (Conceptual Diagram Explained)
+### The Core Analysis Pipeline: From Data to Actionable Insight
+#### Data Ingestion & Initial Processing
+#### Advanced Metric Calculation (v2.5 Engine)
+#### Ticker-Specific Contextualization
+#### Market Regime Classification (v2.5 Dynamics)
+#### Nuanced Signal Generation (v2.5 Scoring)
+#### Enhanced Key Level Identification
+#### The Adaptive Trade Idea Framework (ATIF) in Action
+#### Precision Parameter Optimization
+#### Stateful Recommendation Management & Performance Tracking
+### Key Python Modules and Their Roles in v2.5
+### Understanding config_v2_5.json: The Control Center
+#### Overview of the Enhanced Configuration Structure
+#### The Concept of Global vs. Symbol-Specific Overrides
+## Core Concepts & Terminology (EOTS v2.5 Context)
+### Foundational Options Greeks (Brief Refresher)
+### Critical v2.4 Concepts Carried into v2.5 (GIB, NVP, HP_EOD etc.)
+### New & Evolved Concepts for v2.5:
+#### Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0) - Conceptual Overview
+#### Enhanced Rolling Flow Metrics (VAPI-FA, DWFD, TW-LAF) - Conceptual Overview
+#### Enhanced Heatmaps (SGDHP, IVSDH, UGCH) - Conceptual Overview
+#### Adaptive Trade Idea Framework (ATIF) - The Core Intelligence
+#### Performance-Based Learning & Signal Weighting
+#### Ticker Context Analyzer (Formerly SPY/SPX Optimizer)
+#### Conviction-Based Level Scoring
+#### Continuous Signal Scoring
+#### Enhanced Strategy Specificity
+## Market Regime Engine v2.5: The Enhanced "Soul"
+### The "Brain" Reimagined: Adaptive Intelligence in v2.5
+### Key Input Metric Categories (Leveraging Full v2.5 Arsenal)
+### Integration of Ticker-Specific Context into Regime Analysis
+### Core Logic: How Regimes are Classified in v2.5 (Dynamic Thresholds, Advanced Rules)
+### Example v2.5 Regime Classifications & Market Implications
+#### SPY/SPX Specific Regime Examples
+#### Generalizable Regime Examples for Other Tickers
+### How v2.5 Regimes Modulate System Behavior (ATIF, Signals, Parameters)
+## The v2.5 Metric Arsenal: Detailed Explanations
+### Introduction to Metric Tiers: Base, Adaptive, Advanced Flow
+### Tier 1: Foundational v2.4 Metrics Still Critical in v2.5
+#### Gamma Imbalance (GIB_OI_based)
+#### Net Value/Volume Pressure (NVP, NVP_Vol)
+#### Standard Rolling Net Signed Flows (Underlying Level)
+#### EOD Hedging Pressure (HP_EOD)
+#### Net Customer Greek Flows (Underlying Level)
+#### vri_0dte, vfi_0dte, vvr_0dte, vci_0dte (0DTE Suite)
+#### Traditional MSPI, SAI, SSI (Conceptual basis for Adaptive versions)
+#### ARFI (Conceptual basis for Adaptive versions)
+### Tier 2: New Adaptive Metrics v2.5 (The Chameleons)
+#### Adaptive Delta Adjusted Gamma Exposure (A-DAG)
+#### Enhanced Skew and Delta Adjusted GEX (E-SDAG Methodologies)
+#### Dynamic Time Decay Pressure Indicator (D-TDPI) & its derivatives (Enhanced CTR/TDFI)
+#### Volatility Regime Indicator v2.0 (VRI 2.0) & its derivatives (Enhanced VVR/VFI_sens)
+### Tier 3: New Enhanced Rolling Flow Metrics v2.5 (The "Super Senses")
+#### Volatility-Adjusted Premium Intensity with Flow Acceleration (VAPI-FA)
+#### Delta-Weighted Flow Divergence (DWFD)
+#### Time-Weighted Liquidity-Adjusted Flow (TW-LAF)
+### Data Components for Enhanced Heatmaps v2.5
+#### Super Gamma-Delta Hedging Pressure (SGDHP) Data
+#### Integrated Volatility Surface Dynamics (IVSDH) Data
+#### Ultimate Greek Confluence (UGCH) Data
+### (Reference) Original v2.3/v2.4 Metrics & Their Evolution
+## Ticker Context Analyzer v2.5: Specializing for the Hunt
+### Purpose: Tailoring Analysis Beyond Generic Models
+### SPY/SPX Specific Contexts:
+#### Expiration Calendar Intelligence (0DTE, M/W/F, EOM, Quads)
+#### Recognizing SPY/SPX Behavioral Patterns (FOMC, VIX Div, Gamma Flips)
+#### Intraday Pattern Adjustments (Opening, Midday, EOD Auctions)
+#### Index Component & Sector Rotation Influence (Conceptual / If Data Available)
+### Generalizing Context for Other Tickers:
+#### Liquidity Profiling
+#### Volatility Characterization
+#### Basic Earnings/Event Awareness (If Data Available)
+### How Contextual Flags Influence MRE, Metrics, and ATIF
+## Enhanced Key Level Identification v2.5: Mapping Critical Zones
+### Framework Overview: Beyond Static Thresholds
+### Multi-Timeframe Support & Resistance Analysis (Intraday, Daily, Weekly)
+### Advanced Wall Detection (Leveraging GIB, SGDHP data, UGCH data)
+### Advanced Volatility Trigger Detection (Leveraging E-SDAG-VF, IVSDH data)
+### Conviction-Based Level Scoring (Metric Confluence & Historical Validation)
+### Integration with ATIF and Trade Parameter Optimizer
+## Trading Signals v2.5: Generating Nuanced Alerts
+### Evolution of Signal Generation: From Binary to Scored Insights
+### Core Signal Types & Their v2.5 Enhancements:
+#### Adaptive Directional Signals (from A-MSPI, A-SAI, new flow confirmations)
+#### Adaptive SDAG Conviction Signals (from E-SDAG alignment)
+#### Volatility Regime Signals (from VRI 2.0, IVSDH data, MRE context)
+#### Enhanced Time Decay Signals (D-TDPI driven Pin Risk & Charm Cascade, vci_0dte context)
+#### Predictive Complex Signals (Early Structure Change from A-SSI, Advanced Flow Divergence from DWFD/ARFI)
+### New v2.5 Signals (Driven by new metrics & ATIF needs):
+#### VAPI-FA Momentum/Reversal Signals
+#### DWFD "Smart Money" Divergence Alerts
+#### TW-LAF Sustained Trend Confirmation Signals
+#### (Other regime-driven alerts like Vanna Cascade, EOD Hedging Flow, Skew Shifts from v2.4, now using v2.5 inputs)
+### Continuous Signal Scoring & Confidence Levels
+### Role of Signals as Primary Input to the ATIF
+## Adaptive Trade Idea Framework (ATIF) v2.5: The Apex Predator's Brain
+### ATIF Mission: Dynamic, Learning-Driven Decision Making
+### Component 1: Dynamic Signal Integration & Situational Assessment
+#### Consuming Scored Signals from Signal Generator v2.5
+#### Performance-Based Signal Weighting (via Performance Tracker)
+#### Regime & Ticker Context Modulation of Signal Impact
+#### Advanced Signal Conflict Resolution
+#### Deriving the Overall Situational Assessment Score
+### Component 2: Performance-Based Conviction Mapping
+#### Translating Assessment Scores to Final Trade Conviction
+#### How Historical Success of Setups Influences Current Conviction
+### Component 3: Enhanced Strategy Specificity
+#### Rule-Based Selection of Optimal Option Strategies
+#### Determining Target DTEs and Delta Ranges
+#### Outputting Clear Directives for the Trade Parameter Optimizer
+### Component 4: Intelligent Recommendation Management (Directives Engine)
+#### Adaptive Exit Threshold Logic (Dynamic SL/TP based on VRI 2.0, Key Levels)
+#### Partial Position Management Rules (Scaling In/Out based on VAPI-FA, DWFD, etc.)
+#### Generating Exit and Adjustment Directives for the Orchestrator
+### Component 5: The Learning Loop - Interfacing with Performance Tracker
+#### How Trade Outcomes Refine Signal Weights and Conviction Maps
+## Trade Parameter Optimizer v2.5: Precision Execution Setup
+### Role: Translating ATIF Directives into Tradable Parameters
+### Optimal Contract Selection (Strike & Expiration)
+#### Using ATIF's Delta/DTE Targets
+#### Considering Liquidity and Spread
+### Precise Entry, Target, and Stop-Loss Calculation
+#### Leveraging Enhanced Key Levels (SGDHP, UGCH, NVP, Multi-Timeframe)
+#### Dynamic ATR (from VRI 2.0 & Ticker Context) for Parameter Setting
+#### Regime-Specific ATR Multipliers & Risk/Reward Profiling
+## Orchestrating the Apex Predator: EOTS v2.5 Trade Lifecycle & Cohesive Analysis
+### The Full v2.5 Analysis & Recommendation Lifecycle (End-to-End Flow)
+### Example: A Day in the Life of an EOTS v2.5 Trade Idea (From Genesis to Management)
+### Advanced Flow Mapping with v2.5 Metrics (VAPI-FA, DWFD, TW-LAF in Concert)
+### Confluence Analysis Reimagined: How ATIF Identifies High-Probability Setups
+### Developing Your Trading Plan with EOTS v2.5's Granular Insights
+## Visual Guide to the EOTS v2.5 Dashboard: The Command Center
+### Overview of the Evolved v2.5 Dashboard Layout & Enhanced Modes
+### Core Main Dashboard Visuals v2.5: Key Performance & Context Indicators
+#### Prominent Market Regime & ATIF Conviction Displays
+#### VAPI-FA, DWFD, TW-LAF Oscillators/Charts
+#### Summaries of SGDHP, IVSDH, UGCH Key Zones
+#### Enhanced Strategy Insights Table (v2.5 Detail)
+### Specialized Mode Visuals v2.5:
+#### "Advanced Flow Analysis" Mode (Deep Dive into VAPI-FA, DWFD, TW-LAF)
+#### "Enhanced Heatmap Structures" Mode (Full SGDHP, IVSDH, UGCH)
+#### "Ticker Context & Patterns" Mode (SPY/SPX Expirations, Active Patterns)
+#### (Other Evolved Modes: Volatility v2.0, Adaptive Structures, Performance Review)
+### Interpreting Key Interactive Features of the v2.5 Dashboard
+## Advanced Configuration & Customization of EOTS v2.5
+### Deep Dive into config_v2_5.json: New Sections & Parameters
+#### Configuring Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0)
+#### Configuring Enhanced Flow Metrics (VAPI-FA, DWFD, TW-LAF)
+#### Configuring ATIF Parameters (Learning Rates, Strategy Rules, Exit Logic)
+#### Configuring Ticker Context Analyzer & SPY/SPX Optimizations
+#### Setting Up Symbol-Specific Overrides & "DEFAULT" Profiles
+### Tuning EOTS v2.5 for Different Tickers and Market Conditions
+### Understanding the Impact of v2.5 Configuration Changes (The Enhanced Cascade)
+## Performance Tracking & System Self-Improvement
+### Overview of performance_tracker_v2_5.py
+### Metrics Tracked for Signals and Recommendations
+### How Performance Data Influences ATIF's Adaptability
+### (Optional) Reviewing Performance via the Dashboard
+## Troubleshooting, FAQ & Best Practices for EOTS v2.5
+### Common Issues & Solutions (v2.5 Specific)
+#### Interpreting New Metric Behaviors (VAPI-FA spikes, DWFD divergences)
+#### Understanding ATIF Decision-Making and Strategy Choices
+#### Diagnosing Issues with Symbol-Specific Configurations
+### Optimizing Configuration for Different Trading Styles with v2.5
+### Data Integrity and API Considerations for v2.5 Metrics
+### Best Practices for "Training" the ATIF (If Applicable)
+## Glossary of All v2.5 Metrics, Signals, Regimes, Concepts & Components
+## Appendix for EOTS v2.5
+### Detailed Mathematical Formulas for New & Adaptive v2.5 Metrics
+### Advanced config_v2_5.json Structure Examples (Symbol Overrides, ATIF Rules)
+### Data Schema for performance_tracker_v2_5.py
+### Further Reading & Advanced Options Theory References
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## I. Introduction to EOTS v2.5
-### 1.1. Purpose of This Guide: Mastering the Apex Predator
+## Introduction to EOTS v2.5
+### Purpose of This Guide: Mastering the Apex Predator
 Welcome, trader, to the comprehensive operational guide for the Elite Options Trading System Version 2.5 – codenamed "Apex Predator." This document is not merely a manual; it is your blueprint to understanding and wielding a radically enhanced analytical ecosystem designed for precision, adaptability, and potency in today's dynamic options markets.
 Where EOTS v2.4 introduced "Adaptive Intelligence," EOTS v2.5 elevates this concept to a new echelon. This guide is meticulously crafted to provide you with an exhaustive understanding of its advanced new metrics, the sophisticated Adaptive Trade Idea Framework (ATIF), specialized ticker analysis capabilities, performance-driven learning mechanisms, and the entirely new level of cohesive intelligence that defines this version.
 Our objective is to empower you to:
@@ -226,15 +200,15 @@ Our objective is to empower you to:
 •	Confidently customize and fine-tune EOTS v2.5 using its enhanced configuration capabilities, tailoring its "lethality" to your specific market views and risk parameters.
 •	Understand the "why" behind its adaptive behaviors, as it learns and refines its approach over time.
 This guide is your key to unlocking the full devastating potential of EOTS v2.5. Prepare to transform your market perspective.
-### 1.2. Overview of the EOTS v2.5: Adaptive Intelligence & Universal Potency
+### Overview of the EOTS v2.5: Adaptive Intelligence & Universal Potency
 The Elite Options Trading System Version 2.5 "Apex Predator" represents a paradigm shift in options market analysis, building upon the "Adaptive Intelligence" core of its predecessor. While EOTS v2.4 focused on understanding the market's character through its Market Regime Engine, Version 2.5 internalizes this understanding, adds layers of advanced perception, and evolves into a system capable of dynamic learning and highly specialized tactical execution.
-#### 1.2.1. Core Philosophy: From Market Understanding to Lethal Execution
+#### Core Philosophy: From Market Understanding to Lethal Execution
 The foundational philosophy of EOTS v2.5 remains rooted in the principle that significant, exploitable market patterns arise from the intricate dance of dealer hedging, institutional order flow, and the behavioral dynamics of market participants. However, Version 2.5 advances this by:
 •	Deepening Perception: Incorporating a new suite of advanced flow metrics – such as Volatility-Adjusted Premium Intensity with Flow Acceleration, Delta-Weighted Flow Divergence, and Time-Weighted Liquidity-Adjusted Flow – to "see" institutional footprints and true market conviction with greater clarity.
 •	Enhancing Adaptability: Introducing Adaptive Metrics – including Adaptive Delta Adjusted Gamma Exposure, Enhanced Skew and Delta Adjusted Gamma Exposure methodologies, Dynamic Time Decay Pressure Indicator, and Volatility Regime Indicator Version 2.0 – that intrinsically adjust their sensitivity and interpretation based on the prevailing market context.
 •	Centralizing Intelligence: Implementing the Adaptive Trade Idea Framework, a new sophisticated core that dynamically integrates all signals, learns from historical performance, and makes more nuanced decisions about strategy selection and risk management.
 •	Achieving Universal Potency through Specialization: While initially honed on the complexities of SPY/SPX (the "ultimate training ground"), the Version 2.5 architecture is designed with configurable ticker-specific overrides and per-symbol performance learning. The goal is a core engine so robust and adaptable that its principles can be lethal across a wide array of optionable underlyings once tailored. It aims to master the most complex environment to effectively "murder any ticker."
-#### 1.2.2. Key Architectural Pillars of Version 2.5
+#### Key Architectural Pillars of Version 2.5
 EOTS v2.5 is built upon several interconnected architectural pillars that enable its enhanced capabilities:
 1.	Advanced Data Ingestion & Contextualization: Leverages granular options data (ConvexValue) and supplementary market data (e.g., Open-High-Low-Close-Volume from Tradier), which is then contextualized by a dedicated Ticker Context Analyzer for specific instrument characteristics (e.g., SPY/SPX expiration patterns, general ticker liquidity profiles).
 2.	Next-Generation Metric Calculation (metrics_calculator_v2_5.py): A heavily revised module computes not only critical base metrics (like Gamma Imbalance from Open Interest, Net Value Pressure) but also the new Adaptive Metrics and Advanced Flow Metrics, forming the rich data substrate for all higher-level analysis. This includes generating the underlying data for new Enhanced Heatmaps like the Super Gamma-Delta Hedging Pressure Heatmap, Integrated Volatility Surface Dynamics Heatmap, and Ultimate Greek Confluence Heatmap.
@@ -244,8 +218,7 @@ EOTS v2.5 is built upon several interconnected architectural pillars that enable
 6.	Precision Parameter Optimization (trade_parameter_optimizer_v2_5.py): Takes directives from the Adaptive Trade Idea Framework and calculates precise entry points, support/resistance-based targets (using enhanced key levels), and adaptive stop-losses.
 7.	Learning & Adaptation Loop (performance_tracker_v2_5.py & Adaptive Trade Idea Framework): A closed-loop feedback mechanism where trade outcomes inform and refine future Adaptive Trade Idea Framework signal weighting and conviction mapping on a per-symbol basis.
 8.	Configurable & Modular Design: High configurability via config_v2_5.json (with symbol-specific overrides) and a modular Python structure allows for targeted enhancements and easier maintenance.
-
-### 1.3. Summary of Major Enhancements from v2.4 to v2.5
+### Summary of Major Enhancements from v2.4 to v2.5
 EOTS Version 2.5 builds significantly upon the adaptive framework established in Version 2.4, introducing a suite of enhancements designed to elevate its analytical depth, predictive capabilities, adaptability, and overall "lethality" in trading, particularly for dynamic instruments like SPY/SPX, while maintaining a core structure extensible to other tickers. The evolution from v2.4 to v2.5 is characterized by the following major advancements:
 1.	New Advanced Flow & Adaptive Metrics Suite:
 o	Advanced Rolling Flow Metrics: Introduces highly sophisticated metrics like Volatility-Adjusted Premium Intensity with Flow Acceleration, Delta-Weighted Flow Divergence, and Time-Weighted Liquidity-Adjusted Flow. These are engineered to provide deeper insights into institutional activity, smart money positioning, and the true conviction behind market movements by dissecting real-time rolling flow data with greater nuance than the standard Net Signed Flows of v2.4.
@@ -268,8 +241,7 @@ o	This performance data is then fed back into the Adaptive Trade Idea Framework,
 6.	Refined Configuration for Enhanced Flexibility:
 o	The config_v2_5.json and its management via ConfigManagerV2_5 are designed to support symbol-specific overrides for a wide range of parameters—from metric calculation details and Market Regime Engine rules to ATIF strategy selection logic and Trade Parameter Optimizer settings. This allows for fine-tuning the system for individual tickers while maintaining a core "DEFAULT" profile.
 These enhancements collectively transform EOTS v2.5 from a highly capable analytical tool into a more dynamic, intelligent, and self-optimizing trading system, engineered for peak performance and adaptability.
-
-### 1.4. How to Use This Guide Effectively (Updated for EOTS v2.5)
+### How to Use This Guide Effectively (Updated for EOTS v2.5)
 This Comprehensive System Guide for EOTS v2.5 "Apex Predator" is structured to progressively build your understanding, from foundational concepts to the intricacies of its most advanced components and their lethal interplay. To maximize your mastery of EOTS v2.5, we recommend the following approach:
 1.	Sequential Reading (Especially for New Users or those Upgrading from v2.4):
 o	Sections I-III (Introduction, System Architecture, Core Concepts): Begin here to grasp the overarching philosophy of v2.5, its major architectural shifts from v2.4, and the new terminology that defines its enhanced capabilities. Understanding the symbol-specific override configuration concept early on is vital.
@@ -294,19 +266,7 @@ Key Mindset for Using This Guide & EOTS v2.5:
 •	From Information to Insight to Action: Understand how the system processes raw data into metrics, metrics into signals, signals into situational assessments (by ATIF), and assessments into specific, parameterized trade recommendations.
 •	Iterative Learning (Both for You and the System): Just as the ATIF has a learning loop, your understanding will deepen with use and by observing the system's behavior across different market conditions and tickers.
 This guide aims to be your comprehensive resource for not just operating EOTS v2.5, but for truly understanding its "Apex Predator" capabilities, enabling you to fine-tune its aggression and precision to your trading objectives.
-
-
-
-
-
-
-
-
-
-
-
-
-### 1.5. Disclaimer
+### Disclaimer
 The Elite Options Trading System Version 2.5 "Apex Predator" (EOTS v2.5), including all its components, metrics, signals, heatmaps, frameworks, software code, and this accompanying guide, is provided for educational, informational, and research purposes only.
 Trading and investing in financial markets, especially in derivatives such as options, involve substantial risk of loss and is not suitable for every investor. The information and outputs generated by EOTS v2.5 are not, and should not be construed as, financial advice, investment recommendations, or an offer or solicitation to buy or sell any securities or options contracts.
 The developers and contributors of EOTS v2.5:
@@ -319,24 +279,9 @@ The developers and contributors of EOTS v2.5:
 7.	Software Nature: EOTS v2.5 is a software tool that may evolve. Updates, changes, or discontinuation of features may occur.
 By using EOTS v2.5 and this guide, you acknowledge that you have read, understood, and agree to this disclaimer in its entirety. You agree to use the system and any information derived from it at your own sole risk.
 Always trade responsibly and never risk more than you can afford to lose.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## II. EOTS v2.5 System Architecture & Workflow
+## EOTS v2.5 System Architecture & Workflow
 This section provides a high-level overview of the EOTS v2.5 architecture, illustrating how its core components interconnect and how data flows through the system to produce actionable trading insights. Understanding this architecture is key to appreciating the system's cohesive and adaptive nature.
-### 2.1. High-Level System Blueprint (Conceptual Diagram Explained)
+### High-Level System Blueprint (Conceptual Diagram Explained)
 Imagine a schematic diagram of EOTS v2.5. At the very top, we have External Data Sources. These primarily include your options data provider (e.g., ConvexValue API) for granular options chain and Greek data, and a source for supplementary market data (e.g., Tradier API) for historical Open-High-Low-Close-Volume (OHLCV) and potentially some alternative Implied Volatility (IV) metrics.
 Arrowing down from these sources, the data flows into the main EOTS v2.5 System Boundary.
 Within this boundary, the first layer is the Data Management & Contextualization Layer:
@@ -368,18 +313,10 @@ Finally, arrowing from the Output, we have the Presentation & Interaction Layer:
 •	dashboard_application_v2_5/: The Dash application, which consumes the analysis bundle from the orchestrator to provide visualizations of all metrics, heatmaps, contextual information, and the detailed trade recommendations. It also provides user controls to interact with the system.
 This conceptual diagram highlights a flow from raw data, through layers of increasingly sophisticated analysis and contextualization, to a highly adaptive decision-making core (ATIF), culminating in precise, actionable, and dynamically managed trading insights. The config_manager_v2_5.py and config_v2_5.json underpin the entire structure, providing parameters and rules to all components.
 ---
-
-
-
-
-
-
-
-
-### 2.2. The Core Analysis Pipeline: From Data to Actionable Insight in EOTS v2.5
+### The Core Analysis Pipeline: From Data to Actionable Insight
 The EOTS v2.5 analysis pipeline is an orchestrated sequence of operations designed to transform raw market data into sophisticated, actionable trading insights. This process is cyclical and can be triggered manually by the user or by an automated scheduler via the main run_system_dashboard_v2_5.py script, which in turn invokes methods within its_orchestrator_v2_5.py.
 Here's a step-by-step breakdown of a typical analysis cycle:
-1.	Data Ingestion & Initial Validation (Orchestrator & Fetcher Modules):
+#### Data Ingestion & Initial Processing
 o	Trigger: User request (e.g., "Fetch SPY" button) or scheduled internal timer.
 o	Action (its_orchestrator_v2_5.py initiates):
 	The fetch_data_for_analysis_cycle method within the orchestrator is called with the target symbol(s) and user-defined parameters (DTE range, strike price range percentage).
@@ -393,7 +330,7 @@ o	Output: A "raw data bundle" containing:
 	raw_options_df: A Pandas DataFrame of the options chain from ConvexValue.
 	raw_underlying_dict_combined: A dictionary containing get_und data from ConvexValue, now potentially augmented/updated with the OHLCV snapshot and IV metrics from Tradier.
 	Any fetcher error messages.
-2.	Initial Data Processing & Full Metric Calculation (Invoked by Orchestrator via initial_processor_v2_5.py which calls metrics_calculator_v2_5.py):
+#### Advanced Metric Calculation (v2.5 Engine)
 o	Input: The "raw data bundle" from step 1, current processing datetime, and the target symbol.
 o	Action (initial_processor_v2_5.py):
 	Validates and performs basic cleaning/preparation on raw_options_df and raw_underlying_dict_combined. Adds essential context columns (e.g., calculated DTE, current underlying price from the combined dictionary, current datetime) to the options DataFrame.
@@ -410,38 +347,38 @@ o	Output (from initial_processor_v2_5.py back to orchestrator): A comprehensive 
 	df_strike_level_metrics_obj: The strike-level DataFrame with aggregated and strike-specific metrics.
 	underlying_data_enriched_obj: The underlying data dictionary now including all calculated aggregate v2.5 metrics (GIB, HP_EOD, VAPI-FA, DWFD, TW-LAF, heatmap data summaries if needed for MRE, etc.).
 	Status and any processing error messages.
-3.	Ticker-Specific Contextualization (spyspx_optimizer_v2_5.py / Ticker Context Analyzer - Invoked by Orchestrator):
+#### Ticker-Specific Contextualization
 o	Input: Current processing datetime, the underlying_data_enriched_obj, and potentially a summary of options_df_with_metrics_obj (e.g., available DTEs).
 o	Action: Determines specific contextual flags for the current ticker.
 	For SPY/SPX: Identifies relevant expiration characteristics (0DTE, M/W/F nature), current intraday session (Opening Volatility, Lunch Doldrums, Power Hour, EOD Auction period), and any recognized behavioral patterns (e.g., pre-FOMC).
 	For other tickers: Might identify liquidity profile (high/low), sector, or basic event flags (if earnings data is available).
 o	Output: A ticker_context_dict (e.g., {"is_0DTE_SPX_Friday_PM": True, "active_intraday_period": "POWER_HOUR"}).
-4.	Market Regime Classification (market_regime_engine_v2_5.py - Invoked by Orchestrator):
+#### Market Regime Classification (v2.5 Dynamics)
 o	Input: The underlying_data_enriched_obj (now full of v2.5 metrics), df_strike_level_metrics_obj, current datetime, resolved dynamic thresholds (passed from orchestrator), and the ticker_context_dict.
 o	Action: Evaluates its rules (from config_v2_5.json, which can have symbol-specific overrides) using the new metrics and contextual flags to classify the current market regime with greater precision.
 o	Output: The current_market_regime_v2_5 string (e.g., "REGIME_SPX_0DTE_FRIDAY_PM_NEGATIVE_GIB_WITH_BEARISH_VAPI_FA"). This regime string is added to underlying_data_enriched_obj.
-5.	Nuanced Signal Generation (signal_generator_v2_5.py - Invoked by Orchestrator):
+#### Nuanced Signal Generation (v2.5 Scoring)
 o	Input: df_strike_level_metrics_obj, underlying_data_enriched_obj (which includes the just-classified current_market_regime_v2_5), current datetime, resolved dynamic thresholds, and the ticker_context_dict.
 o	Action: Generates raw trading signals. These v2.5 signals are based on the adaptive metrics, enhanced flow metrics, and can be continuously scored. Their initial strength/relevance is modulated by the regime and ticker context.
 o	Output: A structured dictionary scored_signals_v2_5 (e.g., {"directional": {"bullish": [{"type": "Strong_A_DAG_Support", "strike": 4500, "score": 0.85, ...}]}}).
-6.	Enhanced Key Level Identification (key_level_identifier_v2_5.py - Invoked by Orchestrator):
+#### Enhanced Key Level Identification
 o	Input: df_strike_level_metrics_obj, underlying_data_enriched_obj (for current price, GIB, and data for heatmaps like SGDHP, UGCH), and current price.
 o	Action: Identifies key S/R levels, walls, and volatility triggers using multi-timeframe analysis (if historical A-MSPI available), data for new heatmaps, and NVP. Assigns conviction scores to these levels.
 o	Output: A key_levels_data_v2_5 dictionary (e.g., {"supports": [{"level": 4490, "type": "SGDHP_High", "conviction": 0.9}], "resistances": [...]}).
-7.	Adaptive Trade Idea Framework (ATIF) - Recommendation Generation (adaptive_trade_idea_framework_v2_5.py - Invoked by Orchestrator):
+#### The Adaptive Trade Idea Framework (ATIF) in Action
 o	Input: scored_signals_v2_5, current_market_regime_v2_5, ticker_context_dict, current underlying price, options_df_with_metrics_obj (full chain for selecting contracts), key_levels_data_v2_5, data from performance_tracker_v2_5.py.
 o	Action (generate_trade_recommendations_v2_5 method):
 	Dynamically integrates scored signals, applying performance-based weights (from tracker) and heavy modulation by regime/ticker context.
 	Calculates an overall conviction for potential trade ideas.
 	Selects the most appropriate option strategy type (long call/put, various spreads, etc.), target DTE window, and target delta range.
 o	Output: A list of pending_recommendations_v2_5 (payloads that include strategy directives but need precise parameters).
-8.	Precision Parameter Optimization (trade_parameter_optimizer_v2_5.py - Invoked by Orchestrator):
+#### Precision Parameter Optimization
 o	Input: Each pending_recommendation_v2_5 from ATIF, df_strike_level_metrics_obj, underlying_data_enriched_obj, key_levels_data_v2_5, and the full options_df_with_metrics_obj (for contract selection).
 o	Action (optimize_and_select_contract_parameters method):
 	Selects specific option contract(s) from the chain that best fit the ATIF's DTE/delta targets and liquidity criteria.
 	Calculates precise entry price suggestions, stop-losses, and profit targets using dynamic ATR (contextualized by VRI 2.0) and the high-conviction key levels.
 o	Output: Updates each recommendation payload with status "ACTIVE_NEW_NO_TSL" and the calculated parameters. This list becomes parameterized_new_recos_v2_5.
-9.	Stateful Recommendation Management & Performance Recording (Orchestrator invokes ATIF and Performance Tracker):
+#### Stateful Recommendation Management & Performance Tracking
 o	Input (its_orchestrator_v2_5.py - _manage_active_recommendations_with_atif_v2_5): Existing active_recommendations list, the parameterized_new_recos_v2_5, current full market data bundle (all metrics, regime, context), and ticker_context_dict.
 o	Action (ATIF - get_management_directives_for_active_recommendation): For each existing active recommendation, the ATIF assesses if its parameters need adjustment (e.g., trailing stop) or if an exit is warranted based on evolving V2.5 metrics, regime shifts, or new high-conviction opposing signals. It returns directives.
 o	Action (Orchestrator):
@@ -458,8 +395,7 @@ o	Output: The final_analysis_bundle_v2_5 ready for the Dashboard.
 o	Input: The final_analysis_bundle_v2_5.
 o	Action: Callbacks update all relevant dashboard components: new heatmaps are rendered, flow metric oscillators are updated, the Strategy Insights Table displays new/updated v2.5 recommendations with greater detail, market regime and ticker context are shown.
 This detailed pipeline enables EOTS v2.5 to be highly responsive, deeply analytical, contextually aware, and continuously refining its approach through performance feedback, aiming for that "apex predator" status in identifying and managing trading opportunities.
-
-### 2.3. Key Python Modules and Their Roles in EOTS v2.5
+### Key Python Modules and Their Roles in v2.5
 The EOTS v2.5 system is composed of several interconnected Python modules, each with a distinct responsibility within the data processing, analysis, decision-making, and presentation pipeline. This modular design promotes clarity, maintainability, and testability.
 I. Configuration Management (utils/)
 1.	config_manager_v2_5.py (Class: ConfigManagerV2_5)
@@ -556,21 +492,16 @@ o	Responsibilities:
 	Provide shared utility functions for the dashboard (utils_dashboard_v2_5.py).
 	Display all new v2.5 metrics, Enhanced Heatmap data, Ticker Context insights, specific ATIF recommendations, and potentially ATIF performance/learning indicators.
 This breakdown should provide a clear understanding of what each piece of the EOTS v2.5 puzzle does and how it contributes to the system's "apex predator" capabilities.
-
-
-
-
-
-### 2.4. Understanding config_v2_5.json: The Control Center
+### Understanding config_v2_5.json: The Control Center
 The config_v2_5.json file is the central nervous system of your EOTS v2.5 "Apex Predator." It's where you, the user, define and fine-tune virtually every aspect of the system's behavior, from data fetching parameters and metric calculations to the intricate rules governing the Market Regime Engine and the sophisticated decision-making logic of the Adaptive Trade Idea Framework (ATIF). Proper configuration is paramount to harnessing the full potential of EOTS v2.5.
-#### 2.4.1. Overview of the Enhanced Configuration Structure in v2.5
+#### Overview of the Enhanced Configuration Structure
 EOTS v2.5 introduces an even more comprehensive and granular configuration structure compared to v2.4, managed robustly by the ConfigManagerV2_5. Key characteristics include:
 •	JSON Format: The configuration is a human-readable JSON file, allowing for easy inspection and manual editing (with caution).
 •	Schema Validation (config.schema.v2.5.json): Every config_v2_5.json file is validated against an accompanying JSON Schema file. This schema defines the expected structure, data types, required fields, and permissible values for all configuration parameters. It also specifies default values for many optional settings. This two-file system ensures configuration integrity and helps prevent errors.
 •	Modular Sections: The configuration is organized into logical top-level sections (e.g., system_settings, data_management_settings, core_analytics_settings (which might contain subsections for metrics_calculator_settings, market_regime_engine_settings, atif_settings, etc.), ticker_context_analyzer_settings, visualization_settings).
 •	Granular Control: Within each section, parameters allow for fine-grained control over individual components. For example, you can define specific coefficients for Adaptive Metrics, rule sets for Market Regimes, learning parameters for the ATIF, and display preferences for the dashboard.
 •	Dynamic Threshold Integration: Many thresholds for signals and regime rules can now be defined not just as static values but also dynamically based on the historical distribution of relevant metrics (e.g., "trigger if MetricX > 80th percentile of its last 60 days' values"). The configuration specifies which metrics are tracked for this purpose and how these dynamic thresholds are referenced within rules.
-#### 2.4.2. The Concept of Global vs. Symbol-Specific Overrides (Crucial for v2.5)
+#### The Concept of Global vs. Symbol-Specific Overrides
 A pivotal enhancement in EOTS v2.5 is the introduction of symbol-specific configuration overrides. This architecture allows the system's core logic to be universal while its behavior can be precisely tailored to the unique characteristics of different tickers.
 •	Global Settings ("DEFAULT" Profile): The config_v2_5.json file will contain a primary set of parameters that apply globally or act as a "DEFAULT" profile for any ticker not explicitly given its own override section. This includes default Market Regime rules, ATIF settings, metric calculation parameters, etc.
 •	Symbol-Specific Overrides (symbol_specific_overrides section):
@@ -616,24 +547,9 @@ o	    }
 Understanding and effectively managing config_v2_5.json is critical. The subsequent sections of this guide, particularly Section XIII: Advanced Configuration & Customization v2.5, will delve into the specifics of each configurable parameter. For now, grasp that this file, validated by its schema and intelligently parsed by ConfigManagerV2_5, is the master control for the entire EOTS v2.5 "Apex Predator" system.
 ---
 This concludes Section II. We've covered the high-level architecture, the core analysis pipeline, the roles of key modules, and how the all-important configuration file fits in.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## III. Core Concepts & Terminology (EOTS v2.5 Context)
+## Core Concepts & Terminology (EOTS v2.5 Context)
 To fully understand and leverage the capabilities of EOTS v2.5 "Apex Predator," it's essential to be familiar with its specific terminology and the core concepts that underpin its analytics. This section will briefly cover foundational options terms (assuming prior knowledge) and then provide detailed definitions for concepts that are new, significantly evolved, or of particular importance in EOTS v2.5. From this point forward in the guide, abbreviations for well-defined v2.5 metrics and components may be used.
-### 3.1. Foundational Options Greeks (Brief Refresher)
+### Foundational Options Greeks (Brief Refresher)
 EOTS v2.5 extensively uses options Greeks. A basic understanding is assumed. These include:
 •	Delta: Measures the rate of change of an option's price relative to a $1 change in the underlying asset's price.
 •	Gamma: Measures the rate of change of an option's Delta relative to a $1 change in the underlying asset's price.
@@ -643,7 +559,7 @@ EOTS v2.5 extensively uses options Greeks. A basic understanding is assumed. The
 •	Vanna: Measures the rate of change of an option's Delta with respect to a change in implied volatility (or Vega's sensitivity to underlying price). Key for understanding how IV shifts impact hedging.
 •	Vomma: Measures the rate of change of an option's Vega with respect to a change in implied volatility (volatility of volatility). Important for assessing stability of Vega.
 (Refer to standard options literature for in-depth explanations of these Greeks. This guide will focus on how EOTS v2.5 utilizes their exposures.)
-### 3.2. Critical v2.4 Concepts Carried into v2.5 (Often as Inputs or Baselines)
+### Critical v2.4 Concepts Carried into v2.5 (GIB, NVP, HP_EOD etc.)
 Many powerful concepts from EOTS v2.4 remain foundational to v2.5, often serving as inputs to the new adaptive metrics or providing baseline structural understanding:
 •	Gamma Exposure (GEXOI): (Often gxoi) The total gamma sensitivity from Open Interest at a strike or for the market. The concept is evolved in v2.5 with Adaptive metrics.
 •	Delta Exposure (DEXOI): (Often dxoi) The total delta sensitivity from Open Interest. Also evolved.
@@ -659,27 +575,24 @@ o	0DTE Volatility Flow Indicator (vfi_0dte)
 o	0DTE Vanna-Vomma Ratio (vvr_0dte)
 o	0DTE Vanna Concentration Index (vci_0dte)
 •	Average Relative Flow Index (ARFI): [REFINED IN V2.4, ADAPTIVE INPUT IN V2.5] Measures relative magnitude of recent net flow vs. OI. V2.5 uses a more adaptive version.
-### 3.3. New & Evolved Concepts for EOTS v2.5: The "Apex Predator" Toolkit
-These concepts represent the core upgrades that define the enhanced capabilities and "lethality" of EOTS v2.5.
-#### •	3.3.1. Adaptive Metrics (Conceptual Overview):
+### New & Evolved Concepts for v2.5:
+#### Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0) - Conceptual Overview
 o	A paradigm where foundational metrics (like DAG, SDAG, TDPI, VRI from v2.4) are no longer calculated with static parameters. In v2.5, their calculations are dynamically influenced by the current market regime, prevailing volatility levels (potentially from VRI 2.0), time-to-expiration, recent flow intensity, and ticker-specific context. This makes them inherently more responsive and relevant to the immediate market environment.
 o	Adaptive Delta Adjusted Gamma Exposure (A-DAG): Evolves DAG_Custom. Its flow alignment coefficients (dag_alpha) and potentially the weighting of its components can now adapt to context. (Abbreviation: A-DAG)
 o	Enhanced Skew and Delta Adjusted Gamma Exposure (E-SDAG): Evolves SDAGs. Methodology weights may become dynamic (based on ATIF learning), and skew adjustments are more sophisticated. (Abbreviation: E-SDAG)
 o	Dynamic Time Decay Pressure Indicator (D-TDPI): Evolves TDPI. Time weighting adapts to intraday volatility patterns, and its strike proximity focus (Gaussian width) can adjust to recent price volatility and expiration characteristics. (Abbreviation: D-TDPI)
 o	Volatility Regime Indicator Version 2.0 (VRI 2.0): Evolves vri_sensitivity. More deeply integrates volatility term structure, surface dynamics, and an enhanced vomma calculation. Becomes a key input for other adaptive metrics and the ATIF. (Abbreviation: VRI 2.0)
-
-
-#### •	3.3.2. Enhanced Rolling Flow Metrics (Conceptual Overview):
+#### Enhanced Rolling Flow Metrics (VAPI-FA, DWFD, TW-LAF) - Conceptual Overview
 o	A new suite of advanced underlying-level metrics derived from the base rolling interval data provided by ConvexValue, designed to offer superior insights into institutional participation and true market conviction.
 o	Volatility-Adjusted Premium Intensity with Flow Acceleration (VAPI-FA): A premier metric combining premium per contract (Quality), current implied volatility (Context), and the rate of change of net flow (Acceleration) to identify aggressive, potentially informed institutional positioning. (Abbreviation: VAPI-FA)
 o	Delta-Weighted Flow Divergence (DWFD): Combines net delta-weighted transactional flow with a divergence measure between value flow and volume flow. Aims to spot "smart money" positioning, especially when it diverges from raw volume or apparent price trends. (Abbreviation: DWFD)
 o	Time-Weighted Liquidity-Adjusted Flow (TW-LAF): Creates a robust intraday momentum/flow indicator by giving more weight to flow in liquid options and emphasizing more recent transactional data. Designed to filter noise and identify sustainable flow. (Abbreviation: TW-LAF)
-#### •	3.3.3. Enhanced Heatmaps (Conceptual Overview):
+#### Enhanced Heatmaps (SGDHP, IVSDH, UGCH) - Conceptual Overview
 o	These refer to the data components calculated by metrics_calculator_v2_5.py that are then visualized as advanced heatmaps in the dashboard. They offer more potent structural insights than single-Greek heatmaps.
 o	Super Gamma-Delta Hedging Pressure (Data for SGDHP): Combines gamma exposure, delta exposure, price proximity, and recent flow confirmation to highlight the most potent dealer hedging zones (support/resistance magnets).
 o	Integrated Volatility Surface Dynamics (Data for IVSDH): Integrates Vanna, Vomma, and Charm exposures to reveal tension points on the volatility surface, potentially signaling areas prone to volatility shifts or specific repricing.
 o	Ultimate Greek Confluence (Data for UGCH): A weighted composite of multiple normalized Greek exposures (Delta, Gamma, Vega, Theta, Charm, Vanna) to identify strikes where a confluence of many structural forces creates exceptionally strong support or resistance.
-#### •	3.3.4. Adaptive Trade Idea Framework (ATIF):
+#### Adaptive Trade Idea Framework (ATIF) - The Core Intelligence
 o	The new central decision-making engine of EOTS v2.5. It replaces the more procedural recommendation_logic.py of v2.4.
 o	It takes scored signals, the market regime, ticker context, and historical performance data to:
 	Dynamically integrate and weigh signals.
@@ -687,43 +600,29 @@ o	It takes scored signals, the market regime, ticker context, and historical per
 	Select specific option strategies (long/short, spreads, etc.), target DTEs, and delta ranges.
 	Issue directives for intelligent trade management (adaptive exits, partial profit-taking).
 o	(Abbreviation: ATIF)
-#### •	3.3.5. Performance-Based Learning & Signal Weighting:
+#### Performance-Based Learning & Signal Weighting
 o	A core capability of the ATIF. The system (via performance_tracker_v2_5.py) logs the outcomes of its recommendations.
 o	The ATIF uses this historical performance data, on a per-symbol basis, to dynamically adjust the internal weighting it gives to different signals or patterns when assessing new opportunities. This allows EOTS v2.5 to "learn" what works best for a specific ticker or under certain recurring regime conditions.
-#### •	3.3.6. Ticker Context Analyzer (Evolved from SPY/SPX Optimizer):
+#### Ticker Context Analyzer (Formerly SPY/SPX Optimizer)
 o	The component (spyspx_optimizer_v2_5.py or a more general name) responsible for identifying and flagging specific characteristics of the traded instrument.
 o	For SPY/SPX: expiration cycle details (0DTE, M/W/F, etc.), intraday session periods (open, midday, close), key event proximity (FOMC), recognized behavioral patterns.
 o	For other tickers: can be configured for simpler context like general liquidity level, sector, earnings proximity (if data is available).
 o	This context is fed to the MRE, Metrics Calculator, and ATIF to tailor their logic.
-#### •	3.3.7. Conviction-Based Level Scoring:
+#### Conviction-Based Level Scoring
 o	An enhancement within key_level_identifier_v2_5.py. Instead of just identifying a level, the system scores its "conviction" or strength based on the confluence of multiple supporting metrics (e.g., A-MSPI + high NVP + strong SGDHP signal).
-#### •	3.3.8. Continuous Signal Scoring:
+#### Continuous Signal Scoring
 o	An evolution in signal_generator_v2_5.py. Many signals, instead of being binary (on/off) or having a simple 1-5 star rating at generation, will output a continuous numerical score (e.g., -1.0 to +1.0 for directional bias strength, 0 to 1.0 for volatility expansion likelihood). The ATIF then uses these more granular scores.
-#### •	3.3.9. Enhanced Strategy Specificity:
+#### Enhanced Strategy Specificity
 o	A key output goal of the ATIF. Moving beyond "Bullish Directional Idea" to suggest, for example, "Consider SPY Weekly Call Debit Spread, 5 DTE, Long Strike ~0.40 delta, Short Strike ~0.25 delta" based on the detailed analytical picture.
-
-
-
-
-
-
-
-
-
-
-
-
-
-## IV. Market Regime Engine v2.5: The Enhanced "Soul"
-The Market Regime Engine (MRE), a cornerstone of EOTS v2.4's "Adaptive Intelligence," undergoes a significant evolution in Version 2.5 to become even more perceptive, nuanced, and responsive. It remains the central analytical component that first seeks to understand the prevailing "character" or "state" of the market for the specific ticker being analyzed. This classified regime then becomes the primary contextual lens through which all other metrics are interpreted, signals are weighted, and the Adaptive Trade Idea Framework (ATIF) formulates its strategies. The enhancements in v2.5 focus on leveraging a richer input stream from the new metrics and integrating ticker-specific context more deeply.
-### 4.1. The "Brain" Reimagined: Adaptive Intelligence Reinforced in v2.5
+## Market Regime Engine v2.5: The Enhanced "Soul"
+### The "Brain" Reimagined: Adaptive Intelligence in v2.5
 While the core philosophy remains—understand the market's nature before acting—EOTS v2.5's MRE achieves this with greater sophistication:
 •	Superior Input Data: The MRE now ingests the outputs of metrics_calculator_v2_5.py, including the new Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0) and the Enhanced Rolling Flow Metrics (Volatility-Adjusted Premium Intensity with Flow Acceleration, Delta-Weighted Flow Divergence, Time-Weighted Liquidity-Adjusted Flow). These provide a more accurate and dynamic reflection of market structure, volatility expectations, and true order flow conviction than was available in v2.4.
 •	Deeper Contextual Awareness: The MRE directly incorporates contextual flags and states from the Ticker Context Analyzer (spyspx_optimizer_v2_5.py). This means rules can be designed to behave differently based on whether it's a SPY 0DTE Friday afternoon, an FOMC announcement day, or if a specific behavioral pattern for the analyzed ticker is active.
 •	More Expressive Rule Engine: The regime_rules defined in config_v2_5.json can now be even more complex and nuanced, referencing a wider array of conditions and thresholds derived from the advanced v2.5 metrics. The use of dynamically resolved thresholds (managed by ITSOrchestratorV2_5 and accessible to the MRE) also allows rules to self-adjust to recent market volatility in specific metrics.
 •	Symbol-Specific Regime Logic: Through the symbol_specific_overrides in config_v2_5.json, the MRE can load and apply entirely different sets of regime rules or adjusted thresholds for different tickers, allowing for true specialization (e.g., SPY/SPX regimes might be very different from those for a single tech stock).
 The MRE in v2.5 doesn't just classify broad states like "Negative Gamma"; it aims for more granular and context-rich classifications like "SPX_0DTE_FINAL_HOUR_NEGATIVE_GIB_WITH_STRONG_VAPI_FA_BUYING_PRESSURE_AND_HIGH_VCI_PIN_POTENTIAL".
-### 4.2. Key Input Metric Categories (Leveraging Full v2.5 Arsenal)
+### Key Input Metric Categories (Leveraging Full v2.5 Arsenal)
 The MRE v2.5 draws upon a comprehensive suite of inputs to make its classification:
 1.	Dealer Positioning & Systemic Risk Metrics (from metrics_calculator_v2_5.py & und_data_enriched_obj):
 o	Gamma Imbalance from Open Interest (GIB_OI_based): Still a cornerstone.
@@ -756,7 +655,7 @@ o	End-of-Day Hedging Pressure (HP_EOD).
 o	Time of Day (from current_time_dt, compared against time_of_day_definitions).
 7.	Direct Ticker Context (from spyspx_optimizer_v2_5.py / Ticker Context Analyzer):
 o	is_0DTE, is_SPX_Friday_PM, active_intraday_session (e.g., "LUNCH_LULL"), is_FOMC_day_flag, etc. These boolean or state flags can directly gate or modify MRE rules.
-### 4.3. Integration of Ticker-Specific Context into Regime Analysis
+### Integration of Ticker-Specific Context into Regime Analysis
 This is a significant enhancement in v2.5. The ticker_context_dict provided by the Ticker Context Analyzer allows the MRE to:
 •	Select Different Rule Sets: The top-level logic in determine_market_regime_v2_5 can first check the ticker. If it's "SPY" or "SPX", it might load a specific section of regime_rules from config_v2_5.json (via symbol_specific_overrides). For another ticker, it might use a "DEFAULT_STOCK" rule set or rules specific to that ticker if defined.
 •	Use Contextual Flags in Conditions: Individual regime rules can directly reference flags from the ticker_context_dict.
@@ -769,32 +668,30 @@ o	    "vci_0dte_agg_gt": "dynamic_threshold:vci_pin_strong_thresh_spx",
 o	    "D_TDPI@ATM_abs_gt": "dynamic_threshold:d_tdpi_pin_strong_thresh_spx"
 o	    // This implies dynamic thresholds could also be symbol-specific
 }
-content_copydownload
-Use code with caution.Json
 •	Adjust Metric Sensitivity (Implicitly): Since Adaptive Metrics already consider DTE (which is a key part of ticker context for SPY/SPX), the MRE indirectly benefits from this pre-adjusted metric input.
-### 4.4. Core Logic: How Regimes are Classified in v2.5 (Dynamic Thresholds, Advanced Rules)
+### Core Logic: How Regimes are Classified in v2.5 (Dynamic Thresholds, Advanced Rules)
 The fundamental logic of market_regime_engine_v2_5.py (evaluating ordered rules based on metric conditions) remains, but is now more powerful:
 •	Hierarchical Evaluation: The regime_evaluation_order in config_v2_5.json is still crucial. More specific or extreme regimes are typically evaluated first.
 •	Expressive Rule Conditions: Rules can combine multiple V2.5 metrics using logical operators (_lt, _gt, _abs_gt, _eq, _in_list etc.), time-of-day checks, and DTE checks (as in v2.4), but now also direct ticker_context_dict flags.
 •	Dynamic Thresholds: Conditions increasingly rely on dynamically resolved thresholds managed by ITSOrchestratorV2_5. Instead of fixed values like {"GIB_OI_based_Und_lt": -50e9}, rules can use {"GIB_OI_based_Und_lt": "dynamic_threshold:gib_extreme_neg_thresh_spy"}. The orchestrator pre-calculates gib_extreme_neg_thresh_spy (e.g., 10th percentile of SPY's GIB over last N days) and passes it to the MRE for the current cycle. This makes regime definitions self-adjusting to the ticker's recent statistical behavior.
 •	Complex Rule Structures (_any_of, _min_conditions_to_activate): Retained from v2.4, these allow for sophisticated logical combinations within a single regime definition.
-### 4.5. Example v2.5 Regime Classifications & Market Implications
+### Example v2.5 Regime Classifications & Market Implications
 (These are illustrative; actual names and conditions are in config_v2_5.json)
-#### •	SPY/SPX Specific Regime Examples:
+#### SPY/SPX Specific Regime Examples
 o	REGIME_SPX_0DTE_FRIDAY_EOD_VANNA_CASCADE_POTENTIAL_BULLISH:
 	Conditions (Conceptual): ticker_context.is_SPX_0DTE_Friday=true, ticker_context.active_intraday_session="FINAL_HOUR", high vci_0dte_agg (SPX), rapidly positive vri_0dte_agg_roc_placeholder (SPX), high vvr_0dte_agg (SPX).
 	Implications: High risk of sharp, self-reinforcing upward move in SPX due to dealer vanna hedging. ATIF should flag extreme caution or signal high-risk scalp opportunity with the flow.
 o	REGIME_SPY_PRE_FOMC_VOL_COMPRESSION_WITH_DWFD_ACCUMULATION:
 	Conditions: ticker_context.is_FOMC_eve=true, VRI_2.0 (SPY) trending down, low vfi_0dte (SPY), but positive DWFD_Und (SPY) consistently above a threshold.
 	Implications: Market coiling before news, but smart money (via DWFD) may be positioning for an upside surprise. ATIF might look for low-premium directional bets or be wary of short volatility.
-#### •	Generalizable Regime Examples for Other Tickers (using "DEFAULT" config profile):
+#### Generalizable Regime Examples for Other Tickers
 o	REGIME_HIGH_VAPI_FA_BULLISH_MOMENTUM_UNIVERSAL:
 	Conditions: VAPI_FA_Und > dynamic_threshold:vapi_strong_positive_thresh_default, TW_LAF_Und > dynamic_threshold:twlaf_confirming_positive_thresh_default, price trending above short-term MA.
 	Implications: Strong institutional buying with momentum across general tickers. ATIF increases conviction for bullish trend-following.
 o	REGIME_ADAPTIVE_STRUCTURE_BREAKDOWN_WITH_DWFD_CONFIRMATION_BEARISH_UNIVERSAL:
 	Conditions: A_MSPI (using adaptive MSPI on the ticker) flips negative at key prior support, A_SSI very low, AND DWFD_Und strongly negative.
 	Implications: Structural breakdown confirmed by smart money flow. High conviction for bearish breakout strategies.
-### 4.6. How v2.5 Regimes Modulate System Behavior (ATIF, Signals, Parameters)
+### How v2.5 Regimes Modulate System Behavior (ATIF, Signals, Parameters)
 The impact of MRE v2.5's output is even more profound and integrated:
 1.	Adaptive Metric Calculation: Some Adaptive Metrics in metrics_calculator_v2_5.py might take the just-classified regime (if the calculation pipeline allows for this feedback in a single cycle, or from the previous cycle's regime) as an input to fine-tune their parameters (e.g., A-DAG's alpha coefficients could be regime-specific).
 2.	Signal Generation (signal_generator_v2_5.py):
@@ -810,23 +707,18 @@ o	Regime dictates ATR multipliers for stop-losses and profit targets (e.g., wide
 o	Regime influences the selection of S/R levels (e.g., NVP-based levels might be prioritized in strong flow regimes, while UGCH structural levels dominate in consolidation regimes).
 5.	Ticker Context Analyzer (spyspx_optimizer_v2_5.py): While TCA primarily feeds the MRE, some MRE outputs could potentially feedback to refine TCA's pattern recognition (advanced concept, e.g., "is pattern X more likely given Regime Y?").
 The MRE v2.5, therefore, sits at the heart of a more intelligent feedback loop, orchestrating a highly contextual and adaptive response across the entire EOTS v2.5 system. Its ability to accurately classify the market's character for any given ticker, using a superior suite of metrics and context, is what unlocks the "apex predator" potential.
-
-
-
-
-
-## V. The v2.5 Metric Arsenal: Detailed Explanations
+## The v2.5 Metric Arsenal: Detailed Explanations
 The analytical power of EOTS v2.5 "Apex Predator" is built upon a sophisticated and multi-layered arsenal of metrics. These range from foundational market structure indicators carried over and refined from previous versions, to entirely new adaptive and advanced flow metrics designed for superior market perception and predictive capability. This section provides detailed explanations for each key metric or metric family.
 Understanding these metrics—what they measure, how they are calculated (conceptually, with key v2.5 inputs highlighted), their theoretical market impact, and how to interpret them within the v2.5 framework—is essential for mastering the system.
-### 5.1. Introduction to Metric Tiers: Base, Adaptive, Advanced Flow
+### Introduction to Metric Tiers: Base, Adaptive, Advanced Flow
 For clarity, we can categorize the primary metrics in EOTS v2.5 into three conceptual tiers:
 •	Tier 1: Foundational Metrics (Often v2.4 Basis, Still Critical): These are key metrics, many introduced or refined in v2.4, that continue to provide essential information about dealer positioning, basic flow pressures, and core market structure. They often serve as inputs to higher-tier metrics or provide baseline context. Examples: Gamma Imbalance from Open Interest (GIB_OI_based), Net Value Pressure (NVP), standard Rolling Net Signed Flows, 0DTE Suite (vri_0dte, etc.).
 •	Tier 2: New Adaptive Metrics (v2.5 Chameleons): These are evolutions of key v2.4 structural and volatility metrics. Their defining characteristic is that their internal calculation parameters and/or sensitivities dynamically adjust based on the prevailing market context (regime, volatility, Time-To-Expiration (DTE), ticker-specifics). Examples: Adaptive Delta Adjusted Gamma Exposure (A-DAG), Enhanced Skew and Delta Adjusted Gamma Exposure (E-SDAG), Dynamic Time Decay Pressure Indicator (D-TDPI), Volatility Regime Indicator Version 2.0 (VRI 2.0).
 •	Tier 3: New Enhanced Rolling Flow Metrics (v2.5 "Super Senses"): This suite of advanced, underlying-level metrics offers a much deeper and more nuanced analysis of real-time transactional flow, aiming to uncover institutional footprints, smart money positioning, and true market conviction. Examples: Volatility-Adjusted Premium Intensity with Flow Acceleration (VAPI-FA), Delta-Weighted Flow Divergence (DWFD), Time-Weighted Liquidity-Adjusted Flow (TW-LAF).
 Additionally, we will discuss the Data Components for Enhanced Heatmaps, which are specific data arrays calculated by metrics_calculator_v2_5.py that feed the new advanced heatmap visualizations.
-### 5.2. Tier 1: Foundational Metrics (Primarily Derived from get_chain in v2.5)
+### Tier 1: Foundational Metrics (Primarily Derived from get_chain in v2.5)
 These metrics, while some were introduced in v2.4, are now primarily calculated by aggregating or analyzing granular per-contract data obtained via the get_chain API endpoint from ConvexValue. This ensures maximum precision. They provide crucial baseline information for the more advanced v2.5 analytics.
-#### 5.2.1. Gamma Imbalance from Open Interest (GIB_OI_based) (v2.5 Source: Aggregated get_chain)
+#### Gamma Imbalance (GIB_OI_based)
 •	Metric Name & Abbreviation: Gamma Imbalance from Open Interest (GIB)
 o	(Previously GIB_OI_based in v2.4 guide, simplified to GIB where context implies OI basis)
 •	V2.5 Conceptual Explanation: Quantifies the net aggregate gamma exposure that dealers are inferred to hold from all outstanding Open Interest (OI) for an underlying. A negative GIB typically indicates dealers are net short gamma systemically (their hedging is pro-cyclical, amplifying moves). A positive GIB suggests dealers are net long gamma (counter-cyclical hedging, dampening volatility). Represents standing gamma risk based on the composition of the options chain.
@@ -840,7 +732,6 @@ o	Process:
 	Und_Call_GXOI_Sum = Sum of gxoi for all call contracts.
 	Und_Put_GXOI_Sum = Sum of gxoi for all put contracts.
 	(The metrics_calculator_v2_5.py performs these sums across the entire chain data passed to it).
-
 3.	Apply the dealer positioning convention (from config_v2_5.json, but commonly, dealers are net long gamma from calls they've effectively written/are short against, and net short gamma from puts they've effectively written/are short against, though your specific v2.4 calculation was (call_gxoi - put_gxoi) assuming a certain perspective of the provided get_und sums. For get_chain, this might be interpreted as: Net_Dealer_Gamma_Units_from_OI = Sum(call_contract_gxoi_interpreted_as_dealer_long) - Sum(put_contract_gxoi_interpreted_as_dealer_short) or more simply based on total call vs put gxoi with an inferential assumption based on market maker typical positioning). The exact formula for net dealer gamma needs to be consistently defined based on how market maker books are inferred from call_gxoi and put_gxoi sums from the chain.
 	Let's assume a refined convention: GIB (Raw Gamma Units from OI) = Sum_of_Call_GXOI - Sum_of_Put_GXOI (where a positive result implies dealers are effectively longer gamma from calls than they are short from puts, often leading to positive GIB if they are net sellers of puts). This formula needs validation against your precise intended market maker inference.
 4.	Dollarize: GIB_Dollar_Value = GIB (Raw Gamma Units from OI) * Underlying_Price * Contract_Multiplier.
@@ -860,8 +751,7 @@ o	strategy_settings.gamma_exposure_source_col (should point to gxoi from chain).
 o	strategy_settings.option_kind_col_name.
 o	Market Regime Engine rules use GIB thresholds (e.g., gib_extreme_neg_thresh).
 •	Evolution from v2.4: The primary change is the explicit sourcing from summing get_chain contract-level gxoi data, aiming for maximum accuracy of the current OI gamma picture, rather than relying on a potentially less granular get_und pre-aggregated field. The interpretive power and use cases remain similar but are now part of a more sophisticated system.
-
-#### 5.2.2. Net Value Pressure (NVP) & Net Volume Pressure (NVP_Vol) (v2.5 Source: Aggregated get_chain)
+#### Net Value/Volume Pressure (NVP, NVP_Vol)
 •	Metric Names & Abbreviations: Net Value Pressure (NVP), Net Volume Pressure (NVP_Vol)
 •	V2.5 Conceptual Explanation: These metrics provide direct measures of the net buying or selling pressure at specific option strikes based on the day's trading activity (not Open Interest).
 o	NVP: Represents the net dollar premium transacted at each strike (Total Buy Value at strike - Total Sell Value at strike, from the customer's perspective). A positive NVP at a strike signifies net customer buying of premium (e.g., buying calls/puts or selling covered calls/cash-secured puts where premium is received by the seller which is typically a customer in this interpretation if they are selling to open). A negative NVP signifies net customer selling of premium (e.g., writing calls/puts). This reflects the monetary conviction of flow at specific price points.
@@ -907,8 +797,7 @@ o	Explicit emphasis on get_chain as the sole, granular source for value_bs/volm_
 o	Deeper integration into the ATIF's conviction scoring.
 o	More formal use in KeyLevelIdentifierV2_5 and by TradeParameterOptimizerV2_5.
 o	Potential for dynamic thresholding of what constitutes "strong" NVP based on the ticker's historical NVP patterns.
-
-#### 5.2.3. Standard Rolling Net Signed Flows (Underlying Level) (v2.5 Source: Aggregated get_chain)
+#### Standard Rolling Net Signed Flows (Underlying Level)
 •	Metric Names & Abbreviations:
 o	Rolling Net Signed Value Flow (e.g., NetValueFlow_5m_Und, NetValueFlow_15m_Und)
 o	Rolling Net Signed Volume Flow (e.g., NetVolFlow_5m_Und, NetVolFlow_15m_Und)
@@ -952,8 +841,7 @@ o	strategy_settings.net_flow_cols_chain.valuebs_Xm_base and volmbs_Xm_base (mapp
 o	visualization_settings.mspi_visualizer.rolling_intervals (defines which intervals like "5m", "15m" are processed and summed).
 o	Thresholds for defining "strong" or "persistent" flow are primarily located within market_regime_engine_settings.regime_rules and strategy_settings.recommendations.conv_mod_* (for ATIF conviction).
 •	Evolution from v2.4: The fundamental concept of summing per-contract rolling flows is the same. The key v2.5 aspect is the explicit reliance on get_chain for these per-contract values for maximum granularity, and their role as direct inputs to the much more sophisticated VAPI-FA, DWFD, and TW-LAF metrics. Their integration into ATIF conviction and regime definition is also more formalized.
-
-#### 5.2.4. End-of-Day Hedging Pressure (HP_EOD) (v2.5 Source: GIB from Aggregated get_chain, Underlying Prices from Enriched und_data)
+#### EOD Hedging Pressure (HP_EOD)
 •	Metric Name & Abbreviation: End-of-Day Hedging Pressure (HP_EOD)
 •	V2.5 Conceptual Explanation: HP_EOD is a predictive metric that quantifies the expected dollar volume of net delta hedging activity by market makers (dealers) concentrated in the period leading up to the market close (e.g., last 30-60 minutes). Its calculation primarily depends on:
 1.	The dealers' net aggregate gamma exposure derived from Open Interest (GIB).
@@ -997,114 +885,133 @@ o	market_regime_engine_settings.time_of_day_definitions.eod_pressure_calc_time.
 o	market_regime_engine_settings.eod_reference_price_field (specifies which field in und_data_enriched_obj to use as the day's reference price, e.g., "day_open_price_und" which maps to an actual API field via strategy_settings.greeks_from_und).
 o	Thresholds for "significant" HP_EOD (e.g., hp_eod_significant_neg_thresh) in MRE rules to trigger specific EOD regimes, potentially using dynamic thresholds.
 •	Evolution from v2.4: The core calculation concept is similar. The main v2.5 enhancement is that its primary input, GIB_OI_based_Und, is now derived from aggregating granular get_chain data, potentially making GIB (and thus HP_EOD) more precise. Furthermore, the enriched und_data_api_raw (used for Reference_Price_Start_of_Day and Underlying_Price_at_Trigger_Time) can be more accurate due to the integration of Tradier's current day snapshot OHLCV.
-
-
-#### 5.2.5. Net Customer Greek Flows (Underlying Level) (v2.5 Source: Aggregated get_chain per-strike call/put signed flows)
-•	Metric Names & Abbreviations: NetCustDeltaFlow_Und, NetCustGammaFlow_Und, NetCustVegaFlow_Und, NetCustThetaFlow_Und
-•	V2.5 Conceptual Explanation: These metrics quantify the net aggregate change in Delta, Gamma, Vega, and Theta exposure initiated by customer trading activity across all options for the underlying asset over the current trading day. They are derived by summing the distinct "buy" vs. "sell" flows for each Greek, for both calls and puts, at each strike, and then aggregating to the underlying level.
-o	Positive NetCust[Greek]Flow_Und: Indicates customers, on net, have increased their exposure to that Greek (e.g., net bought delta, net bought gamma). Dealers, as counterparties, would have decreased their exposure (e.g., net sold delta, net sold gamma).
-o	Negative NetCust[Greek]Flow_Und: Indicates customers, on net, have decreased their exposure (e.g., net sold delta, net sold gamma). Dealers would have increased their exposure.
-o	These provide a direct measure of how the day's customer transactions are shifting the overall Greek risk profile of the market for that underlying.
-•	V2.5 Calculation Insight (metrics_calculator_v2_5.py - within orchestrate_all_metric_calculations_v2_5 or a dedicated helper like _calculate_net_customer_greek_flows_und_v2_5):
-o	Primary Source: get_chain API data. Requires fields that provide per-strike, per-option-type (call/put) distinct "buy" and "sell" totals for each Greek's transactional flow for the current day.
-	Example for NetCustDeltaFlow_Und:
-1.	For each strike:
-	deltas_call_buy_at_strike = get_chain value for "total delta from customer call buying at this strike"
-	deltas_call_sell_at_strike = get_chain value for "total delta from customer call selling at this strike"
-	deltas_put_buy_at_strike = get_chain value for "total delta from customer put buying at this strike"
-	deltas_put_sell_at_strike = get_chain value for "total delta from customer put selling at this strike"
-2.	NetCustDeltaFlow_Call_at_Strike = deltas_call_buy_at_strike - deltas_call_sell_at_strike
-3.	NetCustDeltaFlow_Put_at_Strike = deltas_put_buy_at_strike - deltas_put_sell_at_strike
-4.	NetCustDeltaFlow_Und = SUM (NetCustDeltaFlow_Call_at_Strike + NetCustDeltaFlow_Put_at_Strike) across all strikes.
-	Analogous calculations for Gamma (using gammas_call_buy/sell, gammas_put_buy/sell), Vega (vegas_call_buy/sell, vegas_put_buy/sell), and Theta (thetas_call_buy/sell, thetas_put_buy/sell) if these distinct signed flow fields are available per strike/type from get_chain.
-o	If get_chain only provides *total* Greek volume (e.g., "delta volume") without buy/sell separation per Greek, then these precise Net Customer Greek Flows cannot be calculated as described and would rely on less accurate proxies (e.g., using overall net option volume and multiplying by average Greek values, which is much less precise). The v2.4 guide's derivation from get_und implied such granular fields were available there. V2.5 aims to source this from get_chain if possible for consistency.
-o	These aggregate sums are stored in underlying_data_enriched_obj.
-•	How it Influences Price/Market Dynamics:
-o	NetCustDeltaFlow_Und: Strong positive (negative) flow indicates broad customer bullish (bearish) directional pressure, which dealers must hedge.
-o	NetCustGammaFlow_Und: Strong positive (negative) flow means customers are net buyers (sellers) of gamma. This directly impacts td_gib (Traded Dealer Gamma Imbalance, which is -NetCustGammaFlow_Und). If customers buy gamma, dealers sell it, becoming shorter gamma.
-o	NetCustVegaFlow_Und: Strong positive (negative) flow means customers are net buyers (sellers) of vega/volatility. Influences IV levels and dealer vega hedging.
-o	NetCustThetaFlow_Und: Strong positive (negative) flow means customers are net buyers (sellers) of theta (i.e., taking on time decay risk vs. selling it).
-•	V2.5 Interpretation Guide:
-o	Monitor these as daily accumulation indicators.
-o	Crucial for understanding td_gib (Traded Dealer Gamma Imbalance) which is simply the inverse of NetCustGammaFlow_Und.
-o	Provides context for overall market sentiment and potential dealer hedging needs.
-o	Large NetCustDeltaFlow can confirm directional trends seen in TW-LAF or VAPI-FA.
-•	Relationship to other v2.5 Components:
-o	NetCustGammaFlow_Und is the direct input for calculating td_gib.
-o	MarketRegimeEngineV2_5: Can use extreme readings in these flows (e.g., "High Net Customer Delta Buying") as inputs for specific regime classifications.
-o	AdaptiveTradeIdeaFramework (ATIF): Can use these as contextual conviction modifiers (e.g., a bullish ATIF idea is stronger if NetCustDeltaFlow_Und is also strongly positive).
-o	These are more precise inputs for ARFI's delta flow component (NetCustDeltaFlow_at_Strike) and potentially for adaptive metrics if their flow components are refined to use these signed Greek flows instead of just *xvolm proxies.
-•	Key Configuration Notes (config_v2_5.json):
-o	strategy_settings.net_flow_cols_chain: Must accurately map to the get_chain API field names that provide per-strike, per-option-type (call/put) distinct "buy" and "sell" flow totals for Delta, Gamma, Vega, and Theta. This is the most critical dependency.
-o	If such granular signed Greek flow fields are not available from get_chain, the calculation of these precise Net Customer Greek Flows (and thus td_gib from NetCustGammaFlow) would be compromised and rely on the less accurate get_und fields mentioned in v2.4, or proxies.
-•	Evolution from v2.4:
-o	The v2.4 guide indicated these were derived from get_und fields (e.g., deltas_call_buy, gammas_put_sell).
-o	The primary v2.5 enhancement is the *intention* to source these from the most granular level possible, ideally by summing distinct call/put, buy/sell Greek flow components available per strike from get_chain. This provides maximum accuracy and consistency with other get_chain derived metrics like NVP. If get_chain doesn't offer this granularity, then falling back to get_und pre-aggregated sums is the alternative, but the v2.5 goal is higher precision from the chain.
-o	This improved precision makes derived metrics like td_gib more reliable.
-
-#### 5.2.6. vri_0dte, vfi_0dte, vvr_0dte, vci_0dte (0DTE Suite) (v2.5 Source: Primarily get_chain for 0DTE contracts)
-(This section was detailed extensively in the previous response and is largely unchanged in its core concepts and calculations for v2.5, other than emphasizing get_chain as the source for 0DTE contract data like vannaxoi, vxoi, and flow proxies like vannaxvolm, vommaxvolm, and the more precise NetCustVegaFlow_0DTE_Contract for vfi_0dte if per-strike/type vegas_buy/sell are available from get_chain for 0DTEs.)
-
-Key v2.5 aspects for the 0DTE Suite:
-•	Data Sourcing: Explicitly uses 0DTE contract data from get_chain.
-•	vfi_0dte Precision: Aims to use true signed Net Customer Vega Flow per 0DTE contract (from get_chain per-strike/type vegas_buy/sell) if available, enhancing its accuracy over proxies.
-•	Integration: Outputs are more deeply integrated into the v2.5 MarketRegimeEngine (for 0DTE-specific regimes like "Vanna Cascade Alert," "Final Hour Pinning") and ATIF (for 0DTE strategy selection and risk).
-•	Contextualization: Interpretation is heavily influenced by TickerContextAnalyzer flags (e.g., is_0DTE_SPX_Friday_PM).
-
-#### 5.2.7. Traditional MSPI, SAI, SSI (Conceptual basis for Adaptive versions)
-•	In EOTS v2.5, these are largely superseded by their "Adaptive" counterparts (A-MSPI, A-SAI, A-SSI) which are calculated using the Tier 2 Adaptive Metrics.
-•	The original formulas might still be calculated for reference or as a baseline if configured, but the system's decision-making components (MRE, Signal Generator, ATIF) will primarily leverage the adaptive versions due to their enhanced contextual relevance.
-•	The v2.5 enhancement here is that the inputs to these adaptive versions (A-DAG, E-SDAGs, D-TDPI, VRI 2.0) are themselves more refined and context-aware.
-
-#### 5.2.8. ARFI (Conceptual basis for Adaptive versions)
-•	Metric Name & Abbreviation: Average Relative Flow Index (ARFI)
-•	V2.5 Conceptual Explanation: (Largely same as v2.4 but with refined inputs) Measures the average relative magnitude of recent options transactional activity (Delta, Charm proxy, Vanna proxy) compared to existing Open Interest structure in those dimensions at each strike. High ARFI_at_Strike = recent flow is proportionally large vs. OI. Used primarily for price-ARFI divergences.
-•	V2.5 Calculation Insight (refined):
-o	Primary Source: get_chain API data.
-o	Delta Flow Component: Uses the more precise NetCustDeltaFlow_at_Strike (derived from summing distinct get_chain call/put deltas_buy/sell flows per strike, as per 5.2.5). This is a significant improvement over using a simple dxvolm proxy.
-o	Charm & Vanna Flow Components: Continue to use proxies like Total_Charmxvolm_at_Strike_Proxy and Total_Vannaxvolm_at_Strike_Proxy (derived by summing call/put charmxvolm/vannaxvolm from get_chain per strike).
-o	OI Components: Total_DXOI_at_Strike, Total_CharmOI_at_Strike, Total_VannaOI_at_Strike (summed from per-contract *xoi fields from get_chain).
-o	Formula: ARFI_at_Strike = (abs_delta_ratio_strike + abs_charm_proxy_ratio_strike + abs_vanna_proxy_ratio_strike) / 3.0, where each ratio is abs(Flow_Component_at_Strike) / (abs(OI_Component_at_Strike) + EPSILON).
-•	Evolution from v2.4:
-o	Input Refinement: The Delta Flow component is significantly more accurate. Charm/Vanna proxies are clearly defined from get_chain sums.
-o	Integration: ARFI divergences are more formally used by the MRE for "Trend Exhaustion" regimes and by ATIF as a conviction modifier or contrarian trigger, especially when confirmed by new Tier 3 flow metrics like DWFD or waning TW-LAF.
-•	While "ARFI" itself isn't explicitly labeled "Adaptive" like Tier 2 metrics, its v2.5 calculation is more robust and its interpretation is enhanced by the broader adaptive framework of EOTS v2.5.
-
-### 5.3. Tier 2: New Adaptive Metrics v2.5 (The Chameleons)
-(These were detailed extensively in the previous response: A-DAG, E-SDAG Methodologies, D-TDPI & derivatives, VRI 2.0 & derivatives. The core idea is their dynamic adjustment of internal parameters/sensitivities based on Market Regime, Volatility Context, DTE, and Ticker Context.)
-
-Key v2.5 aspects for all Tier 2 Metrics:
-•	Dynamic Calculations: Their formulas or key coefficients adapt based on context.
-•	Contextual Inputs: Current_Market_Regime_v2_5, Current_Volatility_Context (often from VRI 2.0 itself or IV Rank), Average_DTE, Ticker_Context_Flags are direct inputs to their calculation logic in metrics_calculator_v2_5.py.
-•	Configuration: adaptive_metric_params section in config_v2_5.json defines base values and the multipliers/scalers for how context influences them.
-•	Refined Flow Inputs: Many adaptive metrics benefit from using the more precise NetCust[Greek]Flow_at_Strike values (derived from granular get_chain call/put signed Greek flows) instead of relying solely on *xvolm proxies for their flow components, where applicable and available.
-
-### 5.4. Tier 3: New Enhanced Rolling Flow Metrics v2.5 (The "Super Senses")
-(These were detailed extensively in the previous response: VAPI-FA, DWFD, TW-LAF. They are entirely new in v2.5, calculated at the underlying level, and designed to provide superior insights into institutional activity, smart money positioning, and sustainable momentum by incorporating flow quality, acceleration, conviction, and liquidity.)
-
-Key v2.5 aspects for all Tier 3 Metrics:
-•	New to v2.5: Represent a significant advancement in flow analysis.
-•	Underlying Level: Calculated as aggregate indicators for the entire underlying.
-•	Advanced Synthesis: Combine multiple aspects of flow (e.g., value, volume, IV, spreads, rate of change, time-weighting) into single, potent indicators.
-•	Normalization: Typically Z-scored against their own recent history for standardized interpretation of extremity.
-•	Configuration: enhanced_flow_metric_settings in config_v2_5.json controls their parameters (intervals, lookbacks, weighting schemes, IV sources, spread calculation methods).
-•	Primary Drivers for MRE/SignalGenerator/ATIF: Their strong signals or divergences are key inputs for v2.5 decision-making.
-
-### 5.5. Data Components for Enhanced Heatmaps v2.5
-(These were detailed extensively in the previous response: Data for SGDHP, IVSDH, UGCH. metrics_calculator_v2_5.py computes these specialized data arrays/scores per strike or per strike/DTE, which are then visualized by the dashboard.)
-
-Key v2.5 aspects for Heatmap Data Components:
-•	Calculated by metrics_calculator_v2_5.py: Ensures complex logic is centralized.
-•	Derived Data: Not just raw Greeks, but synthesized scores based on specific heatmap logic (e.g., SGDHP includes flow confirmation and price proximity; UGCH is a weighted confluence of multiple normalized Greeks).
-•	Output Format: Ready for dashboard consumption (e.g., new columns in df_strike_level_metrics for 1D heatmaps like SGDHP/UGCH, or a strike-DTE matrix DataFrame for 2D heatmaps like IVSDH).
-•	Configuration: heatmap_generation_settings in config_v2_5.json controls parameters like proximity sensitivity, Greek weights for UGCH, etc.
-•	Purpose: Provide more insightful, multi-dimensional views of market structure and potential dynamics than simple single-Greek heatmaps.
-
-### 5.6. (Reference) Original v2.3/v2.4 Metrics & Their Evolution
-This section in the guide would briefly list key metrics from previous versions and explicitly state how they have been:
-•	Superseded: e.g., original MSPI/SAI/SSI by A-MSPI/A-SAI/A-SSI.
-•	Refined: e.g., GIB now sourced from get_chain sums; ARFI using more precise NetCustDeltaFlow.
-•	Maintained but Contextualized: e.g., 0DTE Suite still critical but interpreted within the broader v2.5 framework.
-•	This helps users transitioning from older versions understand the lineage and improvements.
-
-This detailed structuring ensures that the "V. The v2.5 Metric Arsenal" section of the guide is comprehensive, accurate according to the new v2.5 capabilities, and clearly explains the evolution and enhanced sophistication of the system's analytical components.
+#### Net Customer Greek Flows (Underlying Level)
+#### vri_0dte, vfi_0dte, vvr_0dte, vci_0dte (0DTE Suite)
+#### Traditional MSPI, SAI, SSI (Conceptual basis for Adaptive versions)
+#### ARFI (Conceptual basis for Adaptive versions)
+### Tier 2: New Adaptive Metrics v2.5 (The Chameleons)
+#### Adaptive Delta Adjusted Gamma Exposure (A-DAG)
+#### Enhanced Skew and Delta Adjusted GEX (E-SDAG Methodologies)
+#### Dynamic Time Decay Pressure Indicator (D-TDPI) & its derivatives (Enhanced CTR/TDFI)
+#### Volatility Regime Indicator v2.0 (VRI 2.0) & its derivatives (Enhanced VVR/VFI_sens)
+### Tier 3: New Enhanced Rolling Flow Metrics v2.5 (The "Super Senses")
+#### Volatility-Adjusted Premium Intensity with Flow Acceleration (VAPI-FA)
+#### Delta-Weighted Flow Divergence (DWFD)
+#### Time-Weighted Liquidity-Adjusted Flow (TW-LAF)
+### Data Components for Enhanced Heatmaps v2.5
+#### Super Gamma-Delta Hedging Pressure (SGDHP) Data
+#### Integrated Volatility Surface Dynamics (IVSDH) Data
+#### Ultimate Greek Confluence (UGCH) Data
+### (Reference) Original v2.3/v2.4 Metrics & Their Evolution
+## Ticker Context Analyzer v2.5: Specializing for the Hunt
+### Purpose: Tailoring Analysis Beyond Generic Models
+### SPY/SPX Specific Contexts:
+#### Expiration Calendar Intelligence (0DTE, M/W/F, EOM, Quads)
+#### Recognizing SPY/SPX Behavioral Patterns (FOMC, VIX Div, Gamma Flips)
+#### Intraday Pattern Adjustments (Opening, Midday, EOD Auctions)
+#### Index Component & Sector Rotation Influence (Conceptual / If Data Available)
+### Generalizing Context for Other Tickers:
+#### Liquidity Profiling
+#### Volatility Characterization
+#### Basic Earnings/Event Awareness (If Data Available)
+### How Contextual Flags Influence MRE, Metrics, and ATIF
+## Enhanced Key Level Identification v2.5: Mapping Critical Zones
+### Framework Overview: Beyond Static Thresholds
+### Multi-Timeframe Support & Resistance Analysis (Intraday, Daily, Weekly)
+### Advanced Wall Detection (Leveraging GIB, SGDHP data, UGCH data)
+### Advanced Volatility Trigger Detection (Leveraging E-SDAG-VF, IVSDH data)
+### Conviction-Based Level Scoring (Metric Confluence & Historical Validation)
+### Integration with ATIF and Trade Parameter Optimizer
+## Trading Signals v2.5: Generating Nuanced Alerts
+### Evolution of Signal Generation: From Binary to Scored Insights
+### Core Signal Types & Their v2.5 Enhancements:
+#### Adaptive Directional Signals (from A-MSPI, A-SAI, new flow confirmations)
+#### Adaptive SDAG Conviction Signals (from E-SDAG alignment)
+#### Volatility Regime Signals (from VRI 2.0, IVSDH data, MRE context)
+#### Enhanced Time Decay Signals (D-TDPI driven Pin Risk & Charm Cascade, vci_0dte context)
+#### Predictive Complex Signals (Early Structure Change from A-SSI, Advanced Flow Divergence from DWFD/ARFI)
+### New v2.5 Signals (Driven by new metrics & ATIF needs):
+#### VAPI-FA Momentum/Reversal Signals
+#### DWFD "Smart Money" Divergence Alerts
+#### TW-LAF Sustained Trend Confirmation Signals
+#### (Other regime-driven alerts like Vanna Cascade, EOD Hedging Flow, Skew Shifts from v2.4, now using v2.5 inputs)
+### Continuous Signal Scoring & Confidence Levels
+### Role of Signals as Primary Input to the ATIF
+## Adaptive Trade Idea Framework (ATIF) v2.5: The Apex Predator's Brain
+### ATIF Mission: Dynamic, Learning-Driven Decision Making
+### Component 1: Dynamic Signal Integration & Situational Assessment
+#### Consuming Scored Signals from Signal Generator v2.5
+#### Performance-Based Signal Weighting (via Performance Tracker)
+#### Regime & Ticker Context Modulation of Signal Impact
+#### Advanced Signal Conflict Resolution
+#### Deriving the Overall Situational Assessment Score
+### Component 2: Performance-Based Conviction Mapping
+#### Translating Assessment Scores to Final Trade Conviction
+#### How Historical Success of Setups Influences Current Conviction
+### Component 3: Enhanced Strategy Specificity
+#### Rule-Based Selection of Optimal Option Strategies
+#### Determining Target DTEs and Delta Ranges
+#### Outputting Clear Directives for the Trade Parameter Optimizer
+### Component 4: Intelligent Recommendation Management (Directives Engine)
+#### Adaptive Exit Threshold Logic (Dynamic SL/TP based on VRI 2.0, Key Levels)
+#### Partial Position Management Rules (Scaling In/Out based on VAPI-FA, DWFD, etc.)
+#### Generating Exit and Adjustment Directives for the Orchestrator
+### Component 5: The Learning Loop - Interfacing with Performance Tracker
+#### How Trade Outcomes Refine Signal Weights and Conviction Maps
+## Trade Parameter Optimizer v2.5: Precision Execution Setup
+### Role: Translating ATIF Directives into Tradable Parameters
+### Optimal Contract Selection (Strike & Expiration)
+#### Using ATIF's Delta/DTE Targets
+#### Considering Liquidity and Spread
+### Precise Entry, Target, and Stop-Loss Calculation
+#### Leveraging Enhanced Key Levels (SGDHP, UGCH, NVP, Multi-Timeframe)
+#### Dynamic ATR (from VRI 2.0 & Ticker Context) for Parameter Setting
+#### Regime-Specific ATR Multipliers & Risk/Reward Profiling
+## Orchestrating the Apex Predator: EOTS v2.5 Trade Lifecycle & Cohesive Analysis
+### The Full v2.5 Analysis & Recommendation Lifecycle (End-to-End Flow)
+### Example: A Day in the Life of an EOTS v2.5 Trade Idea (From Genesis to Management)
+### Advanced Flow Mapping with v2.5 Metrics (VAPI-FA, DWFD, TW-LAF in Concert)
+### Confluence Analysis Reimagined: How ATIF Identifies High-Probability Setups
+### Developing Your Trading Plan with EOTS v2.5's Granular Insights
+## Visual Guide to the EOTS v2.5 Dashboard: The Command Center
+### Overview of the Evolved v2.5 Dashboard Layout & Enhanced Modes
+### Core Main Dashboard Visuals v2.5: Key Performance & Context Indicators
+#### Prominent Market Regime & ATIF Conviction Displays
+#### VAPI-FA, DWFD, TW-LAF Oscillators/Charts
+#### Summaries of SGDHP, IVSDH, UGCH Key Zones
+#### Enhanced Strategy Insights Table (v2.5 Detail)
+### Specialized Mode Visuals v2.5:
+#### "Advanced Flow Analysis" Mode (Deep Dive into VAPI-FA, DWFD, TW-LAF)
+#### "Enhanced Heatmap Structures" Mode (Full SGDHP, IVSDH, UGCH)
+#### "Ticker Context & Patterns" Mode (SPY/SPX Expirations, Active Patterns)
+#### (Other Evolved Modes: Volatility v2.0, Adaptive Structures, Performance Review)
+### Interpreting Key Interactive Features of the v2.5 Dashboard
+## Advanced Configuration & Customization of EOTS v2.5
+### Deep Dive into config_v2_5.json: New Sections & Parameters
+#### Configuring Adaptive Metrics (A-DAG, E-SDAG, D-TDPI, VRI 2.0)
+#### Configuring Enhanced Flow Metrics (VAPI-FA, DWFD, TW-LAF)
+#### Configuring ATIF Parameters (Learning Rates, Strategy Rules, Exit Logic)
+#### Configuring Ticker Context Analyzer & SPY/SPX Optimizations
+#### Setting Up Symbol-Specific Overrides & "DEFAULT" Profiles
+### Tuning EOTS v2.5 for Different Tickers and Market Conditions
+### Understanding the Impact of v2.5 Configuration Changes (The Enhanced Cascade)
+## Performance Tracking & System Self-Improvement
+### Overview of performance_tracker_v2_5.py
+### Metrics Tracked for Signals and Recommendations
+### How Performance Data Influences ATIF's Adaptability
+### (Optional) Reviewing Performance via the Dashboard
+## Troubleshooting, FAQ & Best Practices for EOTS v2.5
+### Common Issues & Solutions (v2.5 Specific)
+#### Interpreting New Metric Behaviors (VAPI-FA spikes, DWFD divergences)
+#### Understanding ATIF Decision-Making and Strategy Choices
+#### Diagnosing Issues with Symbol-Specific Configurations
+### Optimizing Configuration for Different Trading Styles with v2.5
+### Data Integrity and API Considerations for v2.5 Metrics
+### Best Practices for "Training" the ATIF (If Applicable)
+## Glossary of All v2.5 Metrics, Signals, Regimes, Concepts & Components
+## Appendix for EOTS v2.5
+### Detailed Mathematical Formulas for New & Adaptive v2.5 Metrics
+### Advanced config_v2_5.json Structure Examples (Symbol Overrides, ATIF Rules)
+### Data Schema for performance_tracker_v2_5.py
+### Further Reading & Advanced Options Theory References
+---
